@@ -155,6 +155,77 @@ body.show-proposal #proposal{display:block}
 .kpis div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}
 .kpis b{display:block;font:700 22px/1.1 Archivo}
 .kpis small{color:var(--muted);font-size:11.5px}
+
+/* ===== v4: backdrops, intro, hotspots, tour, balance, A/B ===== */
+#stage{transition:background .5s}
+body[data-bg=workshop] #stage{background:linear-gradient(180deg,rgba(20,14,10,.35),rgba(20,14,10,.15) 40%,rgba(20,14,10,.55)),url(tex/bench.jpg) center/cover}
+body[data-bg=night] #stage{background:radial-gradient(1100px 800px at 50% 38%,#3a332d 0%,#1f1b18 55%,#121010 100%)}
+body[data-bg=workshop] .crumb,body[data-bg=night] .crumb,body[data-bg=workshop] .hint,body[data-bg=night] .hint{color:rgba(255,255,255,.7)}
+body[data-bg=workshop] .crumb b,body[data-bg=night] .crumb b{color:#fff}
+#wm{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);font:800 min(24vw,330px)/1 Archivo;font-stretch:125%;letter-spacing:.06em;color:transparent;-webkit-text-stroke:1.4px rgba(28,25,22,.075);pointer-events:none;white-space:nowrap;z-index:0;transition:opacity .6s}
+body[data-bg=workshop] #wm,body[data-bg=night] #wm{-webkit-text-stroke-color:rgba(255,255,255,.08)}
+#c{z-index:1}
+.tr{position:absolute;right:58px;top:14px;z-index:3;display:flex;gap:8px}
+.seg.bgsel{background:rgba(255,255,255,.85);border:1px solid var(--line);backdrop-filter:blur(8px)}
+.seg.bgsel button{padding:8px 11px}
+.pill.tour i{background:#1c1916}
+body.touring .pill.tour{background:var(--ink);color:#fff}
+body.touring .pill.tour i{background:var(--accent)}
+/* intro */
+#introCap{position:absolute;left:50%;bottom:92px;transform:translateX(-50%);z-index:4;font:600 11px/1 Inter;letter-spacing:.3em;color:var(--muted);opacity:0;transition:opacity .6s;pointer-events:none;white-space:nowrap}
+body.intro #introCap{opacity:1}
+body.intro .views,body.intro .tl,body.intro .tr{opacity:.25;pointer-events:none}
+.views,.tl,.tr{transition:opacity .6s}
+/* hotspots */
+#hots{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:0;transition:opacity .35s}
+#hots.on{opacity:1}
+.hot{all:unset;position:absolute;left:0;top:0;pointer-events:auto;cursor:pointer;display:flex;align-items:center;gap:8px;margin:-13px 0 0 -13px;transition:transform .08s linear}
+.hot[hidden]{display:none}
+.hot i{width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.95);color:var(--ink);display:grid;place-items:center;font:700 11.5px/1 Inter;font-style:normal;box-shadow:0 0 0 4px rgba(226,99,11,.28),0 4px 12px rgba(0,0,0,.25);animation:pulse 2.4s infinite}
+.hot span{opacity:0;transform:translateX(-4px);transition:.2s;background:var(--ink);color:#fff;padding:6px 9px;border-radius:8px;font:600 11.5px/1 Inter;white-space:nowrap}
+.hot:hover span{opacity:1;transform:none}
+.hot:hover i{background:var(--accent);color:#fff}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(226,99,11,.28),0 4px 12px rgba(0,0,0,.25)}50%{box-shadow:0 0 0 9px rgba(226,99,11,0),0 4px 12px rgba(0,0,0,.25)}}
+#hotCard{position:absolute;left:16px;bottom:76px;z-index:5;width:min(340px,calc(100% - 32px));padding:16px 18px 16px;border-radius:16px;background:rgba(255,255,255,.96);box-shadow:0 20px 50px -18px rgba(0,0,0,.45);border:1px solid var(--line);opacity:0;transform:translateY(10px);pointer-events:none;transition:.3s}
+#hotCard.on{opacity:1;transform:none;pointer-events:auto}
+#hotCard small{font:600 10px/1 Inter;letter-spacing:.18em;color:var(--accent)}
+#hotCard b{display:block;font:700 17px/1.2 Archivo;margin:6px 0 6px}
+#hotCard p{font-size:13px;color:#4a433d;line-height:1.5}
+#hotCard .x2{all:unset;cursor:pointer;position:absolute;right:10px;top:8px;font-size:18px;color:var(--muted)}
+/* balance */
+#balTag{position:absolute;left:0;top:0;z-index:3;pointer-events:none;opacity:0;transition:opacity .3s;margin:-14px 0 0 0}
+#balTag.on{opacity:1}
+#balTag div{transform:translateX(-100%);display:flex;align-items:center;gap:7px;padding:6px 10px;border-radius:999px;background:var(--accent);color:#fff;font:600 11.5px/1 Inter;white-space:nowrap;box-shadow:0 6px 16px -6px rgba(226,99,11,.7)}
+.bal{margin-top:9px;padding:10px 14px 11px;border-radius:12px;background:#f5f2ee;font-size:11.5px;color:var(--muted)}
+.bal .top{display:flex;justify-content:space-between;gap:8px}
+.bal .top b{color:var(--ink);font:700 13px/1 Archivo}
+.bal .gauge{position:relative;height:6px;border-radius:6px;margin:9px 0 5px;background:linear-gradient(90deg,#c9c2b9,#efeae4 45%,#efeae4 55%,#c9c2b9)}
+.bal .gauge:after{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:rgba(0,0,0,.25)}
+#balDot{position:absolute;top:50%;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px #fff;transition:left .5s cubic-bezier(.2,.8,.2,1)}
+.bal .ends{display:flex;justify-content:space-between;font-size:10.5px}
+/* wood info */
+#woodInfo{margin-top:6px}
+#woodInfo .w{display:flex;gap:11px;align-items:center;padding:8px 0}
+#woodInfo .sw{width:34px;height:34px;border-radius:50%;flex:none;box-shadow:0 0 0 1px rgba(0,0,0,.08) inset}
+#woodInfo b{display:block;font:600 12.5px/1.3 Inter}
+#woodInfo small{display:block;color:var(--muted);font-size:11.5px;line-height:1.35}
+/* A/B */
+.abL{position:absolute;z-index:4;display:none;align-items:flex-start;gap:10px;padding:11px 14px;border-radius:14px;background:rgba(255,255,255,.94);box-shadow:0 10px 30px -14px rgba(0,0,0,.4);border:1px solid var(--line);max-width:calc(50% - 30px)}
+.abL i{font-style:normal;flex:none;width:26px;height:26px;border-radius:8px;background:var(--ink);color:#fff;display:grid;place-items:center;font:700 13px/1 Archivo}
+.abL b{display:block;font:700 13.5px/1.25 Archivo}
+.abL span{display:block;font-size:11.5px;color:var(--muted)}
+.abL em{display:block;font-style:normal;font:600 12px/1.4 Inter;margin-top:3px}
+#abA{left:16px;top:56px}#abB{left:calc(50% + 16px);top:56px}
+#abB i{background:var(--accent)}
+body.ab .abL{display:flex}
+body.ab #abDiv{display:block}
+#abDiv{display:none;position:absolute;top:0;bottom:0;left:50%;width:1px;background:rgba(0,0,0,.15);z-index:3}
+body.ab-vert #abB{left:16px;top:calc(50% + 12px)}
+body.ab-vert #abDiv{left:0;right:0;top:50%;bottom:auto;width:auto;height:1px}
+body.ab-vert .abL{max-width:calc(100% - 32px)}
+body.ab #wm,body.ab .crumb,body.ab .tl{opacity:0;pointer-events:none}
+@media (max-width:860px){.tr{right:56px;top:10px}.seg.bgsel button{padding:7px 8px;font-size:11px}#hotCard{left:8px;right:8px;width:auto;bottom:54px;padding:11px 14px}#hotCard b{font-size:15px;margin:3px 0}#hotCard p{font-size:12px;line-height:1.4}#wm{top:42%}.abL{padding:7px 9px;gap:7px;max-width:calc(50% - 14px)}#abA{left:8px;top:96px}#abB{left:calc(50% + 6px);top:96px}.abL i{width:22px;height:22px;font-size:11px}.abL b{font-size:11.5px}.abL span{display:none}.abL em{font-size:10.5px}.af .bal{display:none}}
+
 /* loader */
 .load{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:var(--bg);transition:opacity .6s .1s}
 .load div{width:220px;text-align:center;font:700 11px/1 Archivo;font-stretch:125%;letter-spacing:.42em}
@@ -197,16 +268,23 @@ body.ready .load{opacity:0;pointer-events:none}
 
 <main>
   <section id="stage">
+    <div id="wm">PALIS</div>
     <canvas id="c" tabindex="0" aria-label="3D blade. Drag to rotate in any direction, scroll or pinch to zoom."></canvas>
     <div id="labs"></div>
+    <div id="hots"></div>
+    <div id="balTag"><div>Balance <b>–</b></div></div>
+    <div id="abDiv"></div><div class="abL" id="abA"></div><div class="abL" id="abB"></div>
+    <div id="introCap">ASSEMBLING · 7 PLIES · 2 HANDLE HALVES</div>
+    <div id="hotCard"><button class="x2" aria-label="Close">×</button><small>DETAIL</small><b></b><p></p></div>
     <div class="crumb">Blades / <b>PALIS</b></div>
-    <div class="tl"><button class="pill" id="cmpBtn"><i></i>Compare with your photo<span class="long">&nbsp;· slider</span></button></div>
+    <div class="tl"><button class="pill" id="cmpBtn"><i></i>Compare with your photo<span class="long">&nbsp;· slider</span></button><button class="pill tour" id="tourBtn"><i></i>Guided tour</button></div>
+    <div class="tr"><div class="seg bgsel" aria-label="Backdrop"><button data-bgm="studio" aria-pressed="true">Studio</button><button data-bgm="workshop">Workshop</button><button data-bgm="night">Night</button></div></div>
     <button class="iconbtn" id="fs" title="Fullscreen"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#1c1916" stroke-width="1.6"><path d="M1 5V1h4M11 1h4v4M15 11v4h-4M5 15H1v-4"/></svg></button>
     <div id="toast"></div>
     <div class="hint">Drag in any direction · scroll / pinch to zoom at the cursor · right-drag or two fingers to pan · double-click resets</div>
     <nav class="views" aria-label="Views">
       <button data-view="hero" class="on">3/4</button><button data-view="front">Front</button><button data-view="back">Back</button><button data-view="edge">Edge</button><button data-view="handle">Handle</button><button data-view="butt">Butt</button>
-      <span class="sep"></span><button data-view="layers">Layers</button><button data-view="xray">X-ray</button><button data-view="spin">360°</button>
+      <span class="sep"></span><button data-view="layers">Layers</button><button data-view="xray">X-ray</button><button data-view="ab">A/B</button><button data-view="spin">360°</button>
     </nav>
   </section>
 
@@ -239,12 +317,14 @@ body.ready .load{opacity:0;pointer-events:none}
           <button class="design" data-k="design" data-v="h2"><img src="tex/sw_h2.jpg" alt=""><span><b>Padauk · maple pinstripe</b><small>Three maple veneers, maple end cap — same CAD volume</small></span></button>
           <div class="design ghost"><span class="sq">+8</span><span><b>8 more designs</b><small>Built in the admin from your wood library</small></span></div>
         </div>
+        <div class="sec"><h3>About this wood</h3><div id="woodInfo"></div></div>
         <button class="next" data-step="3">Next: build →</button><button class="back" data-step="1">Back</button>
       </div>
       <div class="step" data-s="3">
         <div class="sec"><h3>Inside the handle <em>affects weight</em></h3>
           <div class="grid3"><button class="chip" data-k="core" data-v="solid">Solid<small>heavy</small></button><button class="chip" data-k="core" data-v="medium">Partly hollow<small>your CAD</small></button><button class="chip" data-k="core" data-v="light">Max hollow<small>light</small></button></div>
           <p class="note">The cavity is shown in X-ray from your Fusion file. Weight = blade body + handle volume × wood density − cavity.</p>
+          <label class="row" style="border:0;padding-bottom:0"><span>Show balance point on the blade<small>Centre of mass from your CAD and the wood densities</small></span><span class="sw"><input type="checkbox" id="balShow"><i></i></span></label>
         </div>
         <div class="sec"><h3>Finish</h3>
           <div class="grid2"><button class="chip" data-k="finish" data-v="untreated">Untreated<small>matt, as sanded</small></button><button class="chip" data-k="finish" data-v="oiled">Oiled<small>deeper colour, satin</small></button></div>
@@ -266,6 +346,7 @@ body.ready .load{opacity:0;pointer-events:none}
     </div>
     <div class="af">
       <div class="sum"><div><small>Price</small><b id="vPrice">€0</b></div><div><small>Est. weight</small><b id="vW">0 g</b><b><span>±5 g</span></b></div><button id="bdBtn">Details</button></div>
+      <div class="bal"><div class="top"><span>Balance point · from the butt</span><b id="vBal">–</b></div><div class="gauge"><span id="balDot"></span></div><div class="ends"><span>handle-heavy</span><span id="balFeel">standard balance</span><span>head-heavy</span></div></div>
       <div id="bdBox"><table id="bd"></table></div>
       <div class="acts"><button id="cart">Add to cart</button><button id="share">Share</button><button id="png">Image</button></div>
     </div>
@@ -309,13 +390,14 @@ body.ready .load{opacity:0;pointer-events:none}
   <div class="k">CONTEST SUBMISSION · RESONANT 3D CONFIGURATOR · <a href="proposal/">open the full proposal page →</a></div>
   <h1>Your blade, from your CAD file and your photographs.</h1>
   <p>This demo shows the PALIS OFF blade (BLADE M – Flared) built directly from your STEP file. The wood comes from your own photographs, registered to the CAD in millimetres. Open <b>Compare with your photo</b> and drag the slider to check it against your photo. There is also a Handle 2 view taken from the same angle as your padauk photo.</p>
-  <div class="kpis"><div><b>1 : 1</b><small>CAD geometry, no remodelling</small></div><div><b>100 %</b><small>wood from your photos</small></div><div><b><span id="pPrice">€3,500</span></b><small>complete project · negotiable to your budget</small></div><div><b><span id="pWeeks">8 weeks</span></b><small>4 milestones · timeline flexible</small></div></div>
+  <div class="kpis"><div><b>1 : 1</b><small>CAD geometry, no remodelling</small></div><div><b>100 %</b><small>wood from your photos</small></div><div><b><span id="pPrice">€450</span></b><small>complete project · negotiable to your budget</small></div><div><b><span id="pWeeks">10 days</span></b><small>4 milestones · timeline flexible</small></div></div>
 
   <h2>What this demo already does</h2>
   <ul>
     <li><b>Geometry:</b> blade, both half handles and the internal handle cavity, tessellated from <i>Flared.step</i>. Photo vs CAD checked: blade outline within 1 %, handle width at 70 mm 26.8 mm (photo) vs 26.9 mm (CAD).</li>
     <li><b>Wood:</b> rosewood faces with the serial engraving, the real ply stack, the end grain with medallion, the padauk with maple veneers and the maple cap. Everything is photographic, with no procedural noise.</li>
     <li><b>Colour-calibrated:</b> lighting and reflectance are measured against your photographs, not set by eye. The rendered front face matches your photo in brightness and colour to within about 1 unit (CIELAB L* 57.4 vs 57.8). Untreated wood reflects almost no direct light, like the real blade. Epoxy, enamel and metal keep their gloss.</li>
+    <li><b>New in this version:</b> the blade builds itself when the page opens, a guided tour with clickable hotspots, a balance point from your CAD shown on the blade and in a gauge, A/B mode that compares two configurations side by side, and Studio / Workshop / Night backdrops (the workshop is your own bench, from your photo).</li>
     <li><b>Two handles, instant switch.</b> Handle 2 follows your CAD volume exactly, and its wood is clipped where the photo runs onto the blade.</li>
     <li><b>360° in every direction:</b> you turn the blade itself, so there is no locked pole. The butt view, the X-ray of the cavity and the exploded ply layers (names from the admin; empty thickness hidden) are each one click.</li>
     <li><b>Live price and weight (±5 g).</b> Weight is calculated from CAD volume × wood density − cavity, so new designs get correct weights automatically. A compatibility rule is included as an example.</li>
@@ -328,19 +410,19 @@ body.ready .load{opacity:0;pointer-events:none}
   <h2>How new handle wood designs are added</h2>
   <table>
     <tr><td><b>A · Design builder (you, no code)</b><small>Each handle shape is split into zones: scales, centre strip, cap and side band. Pick species from your wood library and add up to 5 stripes (width and offset in mm). The admin shows a live 3D preview. Price and weight are set per design; weight is calculated automatically.</small></td><td>10–20 min<br>€0</td></tr>
-    <tr><td><b>B · Photo-matched design (me)</b><small>For irregular or signature designs: send top, bottom and butt photos of the finished handle. I register them to the CAD shape exactly as in this demo.</small></td><td>2–3 days<br>€140 each</td></tr>
+    <tr><td><b>B · Photo-matched design (me)</b><small>For irregular or signature designs: send top, bottom and butt photos of the finished handle. I register them to the CAD shape exactly as in this demo.</small></td><td>1 day<br>€25 each</td></tr>
     <tr><td><b>New wood species</b><small>Upload front and back photos of a flat sample. The admin makes the tileable texture and you enter the density.</small></td><td>5 min<br>€0</td></tr>
   </table>
   <p class="note">Limits of A: stripes run along the handle, mirrored front and back. Curved or diagonal inlays and mosaics use route B.</p>
 
   <h2>Fixed price and milestones</h2>
   <table id="pMil">
-    <tr><td><b>1 · Week 2</b><small>Asset pipeline. 4 blade models and 4 handle shapes in 3D, with their fixed constructions</small></td><td>20 % · €700</td></tr>
-    <tr><td><b>2 · Week 4</b><small>Full configurator: 10 designs, 3 internal structures, finish, flags, labels, engraving, exploded view, live price and weight, rules</small></td><td>30 % · €1,050</td></tr>
-    <tr><td><b>3 · Week 6</b><small>WordPress plugin: no-code admin, WooCommerce cart and checkout with server-validated price, order and email data with preview image, share links, image export</small></td><td>30 % · €1,050</td></tr>
-    <tr><td><b>4 · Week 8</b><small>Desktop and mobile tests, a real test order, live demo of adding a model and a design, handover of source code, assets and admin manual</small></td><td>20 % · €700</td></tr>
+    <tr><td><b>1 · Day 3</b><small>Asset pipeline. 4 blade models and 4 handle shapes in 3D, with their fixed constructions</small></td><td>20 % · €90</td></tr>
+    <tr><td><b>2 · Day 6</b><small>Full configurator: 10 designs, 3 internal structures, finish, flags, labels, engraving, exploded view, live price and weight, rules</small></td><td>30 % · €135</td></tr>
+    <tr><td><b>3 · Day 8</b><small>WordPress plugin: no-code admin, WooCommerce cart and checkout with server-validated price, order and email data with preview image, share links, image export</small></td><td>30 % · €135</td></tr>
+    <tr><td><b>4 · Day 10</b><small>Desktop and mobile tests, a real test order, live demo of adding a model and a design, handover of source code, assets and admin manual</small></td><td>20 % · €90</td></tr>
   </table>
-  <p class="note">Included: everything in your PDF. Running costs: none. Warranty: 60 days of bug fixing. Ownership: all code and assets are yours on final payment. Extra package of 10 designs: <span id="pPack">€1,150</span>.</p>
+  <p class="note">Included: everything in your PDF. Running costs: none. Warranty: 60 days of bug fixing. Ownership: all code and assets are yours on final payment. Extra package of 10 designs: <span id="pPack">€150</span>. Price and timeline are negotiable to fit your budget.</p>
 </div></section>
 
 <div class="load"><div>RESONANT<i><span id="bar"></span></i></div></div>
