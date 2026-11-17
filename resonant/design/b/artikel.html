@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RESONANT – Blogbeitrag · Design B Atelier</title>
+<link rel="stylesheet" href="../concept.css"><style>
+:root{--bg:#f3f0ea;--card:#fbfaf7;--ink:#141414;--mute:#77736b;--line:#ddd8ce;--gold:#FAA719}
+body{background:var(--bg);color:var(--ink);font-family:Inter,sans-serif}
+h1,h2,h3{font-family:Archivo,sans-serif;font-weight:600;letter-spacing:-.02em}
+.top{background:#141414;color:#e9e6df;font-size:12px;text-align:center;padding:9px;letter-spacing:.08em}
+header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:20px 5vw;background:#f3f0eaee;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header img{height:34px}
+nav{display:flex;gap:30px;font:500 14px Inter,sans-serif}
+nav a:hover{color:#b87400}
+.tools{display:flex;gap:18px;align-items:center;font-size:13px}
+.pill{border:1px solid var(--ink);border-radius:30px;padding:8px 16px}
+.hero{display:grid;grid-template-columns:1fr 1.15fr;min-height:calc(100vh - 110px);align-items:stretch}
+.hero .copy{padding:9vh 5vw;display:flex;flex-direction:column;justify-content:center}
+.kicker{font:600 12px Inter,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);display:flex;align-items:center;gap:10px}
+.kicker:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.hero h1{font-size:clamp(48px,6vw,96px);line-height:.98;margin:26px 0;font-stretch:104%}
+.hero h1 em{font-style:normal;color:#b87400}
+.hero p{font-size:20px;line-height:1.55;color:#4c4943;max-width:440px}
+.btns{display:flex;gap:12px;margin-top:38px;flex-wrap:wrap}
+.btn{display:inline-flex;gap:10px;align-items:center;padding:16px 26px;border-radius:40px;font:600 15px Inter,sans-serif}
+.btn.dark{background:#141414;color:#fff}.btn.dark:hover{background:#000}
+.btn.line{border:1px solid var(--ink)}.btn.line:hover{background:#fff}
+.hero .ph{position:relative;margin:24px 24px 24px 0;border-radius:20px;overflow:hidden;background:url(../img/new_handle.jpg) 62% center/cover}
+.hero .tag{position:absolute;left:28px;bottom:28px;background:#fbfaf7ee;border-radius:14px;padding:16px 20px;display:flex;gap:16px;align-items:center;backdrop-filter:blur(6px)}
+.hero .tag img{width:46px;height:46px;border-radius:50%;object-fit:cover}
+.hero .tag b{display:block;font:600 15px Archivo,sans-serif}.hero .tag span{font-size:13px;color:var(--mute)}
+.strip{display:flex;justify-content:space-around;padding:26px 5vw;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:14px;color:#4c4943;flex-wrap:wrap;gap:14px}
+.strip b{color:var(--ink)}
+section{padding:120px 5vw}
+.sh{display:flex;justify-content:space-between;align-items:end;margin-bottom:54px;gap:30px}
+.sh h2{font-size:clamp(34px,3.6vw,56px);line-height:1.02;margin-top:16px}
+.sh p{max-width:380px;color:var(--mute);line-height:1.6}
+.models{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.m{background:var(--card);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:18px;transition:transform .4s,box-shadow .4s}
+.m:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px #0004}
+.m .img{aspect-ratio:3/4;border-radius:12px;background:#efebe3 url(../img/cmp_front.jpg) center/contain no-repeat;background-blend-mode:multiply}
+.m .row{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--mute)}
+.meter{height:3px;background:#e3ded4;border-radius:3px;overflow:hidden}.meter i{display:block;height:100%;background:var(--c)}
+.cfg{margin:0 5vw;border-radius:28px;background:#141414;color:#f3f0ea;display:grid;grid-template-columns:1fr 1fr;overflow:hidden}
+.cfg .txt{padding:90px 5vw}
+.cfg h2{font-size:clamp(34px,3.4vw,54px);line-height:1.02;margin:18px 0 22px}
+.cfg p{color:#bdb8ae;line-height:1.65;max-width:440px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:36px 0}
+.opt{border:1px solid #333;border-radius:14px;padding:16px;display:flex;gap:12px;align-items:center;font-size:14px}
+.opt i{width:30px;height:30px;border-radius:50%;background-size:cover;flex:none}
+.cfg .btn.dark{background:var(--gold);color:#141414}
+.cfg .vis{background:#e9e5dd url(../img/cmp_butt.jpg) center/cover;min-height:560px;position:relative}
+.cfg .vis .chip{position:absolute;right:26px;top:26px;background:#141414;color:#fff;border-radius:30px;padding:10px 16px;font-size:13px}
+.story{display:grid;grid-template-columns:1.2fr 1fr;gap:5vw;align-items:center}
+.story .ph{aspect-ratio:5/4;border-radius:20px;background:url(../img/cmp_h2.jpg) center/cover}
+.story h2{font-size:clamp(32px,3.2vw,50px);line-height:1.04;margin:16px 0 24px}
+.story p{color:#4c4943;line-height:1.75;margin-bottom:14px;max-width:500px}
+.quote{margin-top:30px;padding-left:20px;border-left:3px solid var(--gold);font:500 20px/1.45 Archivo,sans-serif;max-width:460px}
+.blog{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.post{background:var(--card);border-radius:18px;overflow:hidden}
+.post .pi{aspect-ratio:16/8;background-size:cover;background-position:center}
+.post div{padding:26px}.post small{font-size:12px;color:var(--mute);letter-spacing:.14em}.post h3{font-size:24px;margin:10px 0}
+footer{background:#141414;color:#d9d5cc;padding:80px 5vw 40px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;margin-top:40px}
+footer h4{font:600 12px Inter,sans-serif;letter-spacing:.2em;color:#8a857b;margin-bottom:18px}
+footer a{display:block;margin:10px 0;font-size:15px}
+footer a:hover{color:var(--gold)}
+footer .bot{grid-column:1/-1;border-top:1px solid #2a2a2a;padding-top:24px;font-size:12px;color:#77736b}
+@media(max-width:900px){nav{display:none}.hero,.cfg,.story,.blog{grid-template-columns:1fr}.hero .ph{min-height:420px;margin:0 16px 16px}.models{grid-template-columns:1fr 1fr}footer{grid-template-columns:1fr 1fr}.sh{flex-direction:column;align-items:start}section{padding:80px 6vw}.cfg{margin:0 4vw}}
+
+header.solid{} nav a.cur{font-weight:700}</style><link rel="stylesheet" href="../inner.css"></head>
+<body class="pg t-b"><header class="solid">
+  <a href="index.html"><img src="../img/logo_black.svg" alt="RESONANT – The sound of table tennis"></a>
+  <nav><a href="index.html">Home</a><a href="hoelzer.html">Hölzer</a><a href="zubehoer.html">Zubehör</a><a href="blog.html">Blog</a><a href="ueber-uns.html">Über uns</a><a href="kontakt.html">Kontakt</a></nav>
+  <div class="tools"><span>DE · EN</span><a href="konto.html">Login</a><a class="pill" href="warenkorb.html">Warenkorb 1</a></div>
+</header>
+<main><div class="art"><div class="crumb"><a href="index.html">Home</a> / <a href="blog.html">Blog</a> / Griff</div><span class="small">Griff</span><h1 class="H" style="font-size:clamp(40px,5vw,72px);margin:16px 0 30px">Der beste Tischtennisgriff der Welt?</h1>
+<div class="cover"></div><p>Der bestehende Beitragstext erscheint hier im neuen Lesedesign: grössere Schrift, ruhiger Zeilenabstand und eine schmale Spalte für bequemes Lesen auf allen Geräten.</p>
+<span class="ph-line" style="width:96%"></span><span class="ph-line" style="width:88%"></span><span class="ph-line" style="width:92%"></span><span class="ph-line" style="width:60%"></span>
+<h2 class="H">Zwischentitel</h2><span class="ph-line" style="width:94%"></span><span class="ph-line" style="width:90%"></span><span class="ph-line" style="width:72%"></span>
+<blockquote>«Mehr als ein Schläger. Ein Instrument für Spieler mit Anspruch.»</blockquote>
+<span class="ph-line" style="width:95%"></span><span class="ph-line" style="width:84%"></span>
+<div class="card" style="margin-top:50px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap"><div><span class="small">Passend dazu</span><h3 class="H" style="font-size:28px;margin-top:8px">Gestalte deinen eigenen Griff</h3></div><a class="pb acc" href="../../">Zum Konfigurator →</a></div></div></main>
+<footer>
+  <div><img src="../img/logo_white.svg" style="height:38px" alt=""><p style="margin-top:24px;line-height:1.6;color:#9a958b;max-width:300px"><b style="color:#fff">Musik trifft Tischtennis.</b><br>Mehr als ein Schläger. Ein Instrument für Spieler mit Anspruch.</p></div>
+  <div><h4>INFO</h4><a href="ueber-uns.html">Über uns</a><a href="kontakt.html">Kontakt</a></div>
+  <div><h4>SERVICE</h4><a href="rechtliches.html">AGB</a><a href="rechtliches.html">Versand &amp; Lieferung</a><a href="rechtliches.html">Widerrufsbelehrung</a><a href="rechtliches.html">Zahlungsarten</a></div>
+  <div><h4>RECHTLICHES</h4><a href="rechtliches.html">Datenschutzerklärung</a><a href="rechtliches.html">Impressum</a></div>
+  <div class="bot">© RESONANT · Swiss made</div>
+</footer><script src="../concept.js"></script></body></html>

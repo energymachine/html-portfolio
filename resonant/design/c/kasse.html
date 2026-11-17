@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RESONANT – Kasse · Design C Resonanz</title>
+<link rel="stylesheet" href="../concept.css"><style>
+:root{--ink:#0d0d0d;--paper:#fff;--mute:#777;--gold:#FAA719;--y:#FDDD10;--o:#F68712;--r:#ED1D24}
+body{background:var(--paper);color:var(--ink);font-family:Inter,sans-serif}
+.cd{font-family:"Barlow Condensed",sans-serif;text-transform:uppercase}
+header{position:absolute;inset:0 0 auto;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:24px 4vw;color:#fff}
+header img{height:36px}
+nav{display:flex;gap:30px;font:600 17px "Barlow Condensed",sans-serif;letter-spacing:.08em}
+nav a:hover{color:var(--gold)}
+.tools{font:600 16px "Barlow Condensed",sans-serif;letter-spacing:.08em;display:flex;gap:20px}
+.hero{background:#0d0d0d;color:#fff;min-height:100vh;position:relative;overflow:hidden;display:grid;place-items:center}
+.wave{position:absolute;left:50%;top:50%;border-radius:50%;border:1px solid #ffffff;transform:translate(-50%,-50%) scale(.2);opacity:0;animation:w 6s linear infinite}
+@keyframes w{0%{transform:translate(-50%,-50%) scale(.15);opacity:.55}100%{transform:translate(-50%,-50%) scale(1.6);opacity:0}}
+.core{position:relative;z-index:2;width:min(34vw,380px);aspect-ratio:1;border-radius:50%;background:url(../img/cmp_butt.jpg) 50% 50%/240% auto;box-shadow:0 0 0 10px #0d0d0d,0 0 0 11px #333,0 40px 120px #000}
+.hero .big{position:absolute;z-index:1;left:0;right:0;top:50%;transform:translateY(-50%);text-align:center;font:800 clamp(90px,19vw,330px)/.8 "Barlow Condensed",sans-serif;letter-spacing:-.01em;color:transparent;-webkit-text-stroke:1px #ffffff30;white-space:nowrap}
+.hero .copy{position:absolute;z-index:3;left:4vw;bottom:8vh;max-width:520px}
+.hero h1{font:800 clamp(44px,5.2vw,84px)/.9 "Barlow Condensed",sans-serif;text-transform:uppercase}
+.hero h1 span{color:var(--gold)}
+.hero p{color:#bbb;font-size:18px;margin-top:16px;line-height:1.5}
+.hero .cta{position:absolute;z-index:3;right:4vw;bottom:8vh;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.btn{display:inline-flex;gap:12px;align-items:center;padding:16px 26px;font:700 18px "Barlow Condensed",sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.btn.g{background:var(--gold);color:#111}.btn.w{border:2px solid #fff;color:#fff}.btn.k{background:#0d0d0d;color:#fff}
+.btn:hover{filter:brightness(1.1)}
+/* speed scale */
+.speed{padding:120px 4vw 100px}
+.speed h2{font:800 clamp(48px,6vw,96px)/.88 "Barlow Condensed",sans-serif;text-transform:uppercase}
+.speed .lead{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:70px}
+.speed .lead p{max-width:380px;color:var(--mute);line-height:1.6}
+.scale{position:relative;height:14px;border-radius:10px;background:linear-gradient(90deg,var(--y),var(--o) 50%,var(--r));margin:0 0 30px}
+.ticks{display:flex;justify-content:space-between;font:700 18px "Barlow Condensed",sans-serif;letter-spacing:.1em;color:var(--mute);margin-bottom:60px}
+.mods{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.md{border:2px solid #eee;padding:26px;display:flex;flex-direction:column;gap:20px;position:relative;transition:border-color .3s;cursor:pointer;min-height:360px;overflow:hidden}
+.md:hover{border-color:var(--c)}
+.md:before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:var(--c)}
+.md .nm{font:800 46px/.9 "Barlow Condensed",sans-serif}
+.md .cl{font:800 22px "Barlow Condensed",sans-serif;color:var(--c);letter-spacing:.06em}
+.md .bar{display:flex;gap:3px}.md .bar i{flex:1;height:22px;background:#eee}.md .bar i.f{background:var(--c)}
+.md .ph{flex:1;background:url(../img/cmp_front.jpg) center/contain no-repeat;min-height:150px;transition:transform .5s}
+.md:hover .ph{transform:scale(1.06) rotate(-4deg)}
+.md .go{font:700 16px "Barlow Condensed",sans-serif;letter-spacing:.12em}
+/* configurator */
+.cfg{background:var(--gold);display:grid;grid-template-columns:1fr 1fr;align-items:stretch}
+.cfg .t{padding:100px 4vw}
+.cfg h2{font:800 clamp(48px,5.4vw,90px)/.86 "Barlow Condensed",sans-serif;text-transform:uppercase;margin:0 0 26px}
+.cfg p{font-size:18px;line-height:1.55;max-width:460px;color:#2a1d00}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);margin:44px 0;border-top:2px solid #0d0d0d}
+.nums div{padding:18px 0 0}.nums b{display:block;font:800 56px/1 "Barlow Condensed",sans-serif}.nums span{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
+.cfg .v{background:#0d0d0d url(../img/cmp_h2.jpg) center/cover no-repeat;position:relative;min-height:560px}
+.cfg .v:after{content:"3D";position:absolute;right:26px;bottom:20px;font:800 120px/1 "Barlow Condensed",sans-serif;color:var(--gold)}
+/* craft */
+.craft{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto;gap:16px;padding:120px 4vw}
+.craft .h{grid-column:1/2;display:flex;flex-direction:column;justify-content:end}
+.craft h2{font:800 clamp(44px,4.6vw,76px)/.88 "Barlow Condensed",sans-serif;text-transform:uppercase}
+.craft p{color:var(--mute);line-height:1.65;margin-top:18px}
+.tile{background-size:cover;background-position:center;min-height:320px}
+.blog{padding:0 4vw 120px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.post{background:#0d0d0d;color:#fff;padding:40px;min-height:260px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.post:after{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:repeating-radial-gradient(circle,#0000 0 14px,#ffffff14 15px 16px)}
+.post small{font:700 15px "Barlow Condensed",sans-serif;letter-spacing:.14em;color:var(--gold)}
+.post h3{font:800 40px/.95 "Barlow Condensed",sans-serif;text-transform:uppercase;max-width:420px}
+footer{background:#0d0d0d;color:#fff;padding:80px 4vw 40px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px}
+footer h4{font:800 22px "Barlow Condensed",sans-serif;letter-spacing:.08em;margin-bottom:16px}
+footer a{display:block;margin:9px 0;font:600 17px "Barlow Condensed",sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#bbb}
+footer a:hover{color:var(--gold)}
+footer .bot{grid-column:1/-1;border-top:1px solid #222;padding-top:22px;color:#666;font-size:12px}
+@media(max-width:900px){nav{display:none}.mods{grid-template-columns:1fr 1fr}.cfg,.blog{grid-template-columns:1fr}.craft{grid-template-columns:1fr 1fr}.craft .h{grid-column:1/-1}.speed .lead{flex-direction:column;align-items:start}.hero .cta{left:4vw;right:auto;bottom:11vh;align-items:flex-start;flex-direction:row}.hero .copy{bottom:22vh}.core{width:56vw;margin-bottom:34vh}.hero .big{top:33%}.wave{top:33%!important}.btn{padding:14px 18px;font-size:16px}footer{grid-template-columns:1fr 1fr}.nums b{font-size:40px}}
+
+header.solid{position:sticky;top:0;background:#0d0d0d} nav a.cur{color:#FAA719}</style><link rel="stylesheet" href="../inner.css"></head>
+<body class="pg t-c"><header class="solid">
+  <a href="index.html"><img src="../img/logo_white.svg" alt="RESONANT – The sound of table tennis"></a>
+  <nav><a href="index.html">Home</a><a href="hoelzer.html">Hölzer</a><a href="zubehoer.html">Zubehör</a><a href="blog.html">Blog</a><a href="ueber-uns.html">Über uns</a><a href="kontakt.html">Kontakt</a></nav>
+  <div class="tools"><a href="konto.html">Login</a><a href="warenkorb.html">Warenkorb 1</a><span style="color:var(--gold)">DE</span><span>EN</span></div>
+</header>
+<main><div class="phd"><div class="crumb"><a href="index.html">Home</a> / <a href="warenkorb.html">Warenkorb</a> / Kasse</div><h1 class="H">Kasse</h1></div>
+<div class="stepsx"><span>1 Warenkorb</span><b>2 Kasse</b><span>3 Bestätigung</span></div>
+<div class="cart"><div><h3 class="H" style="font-size:28px;margin-bottom:20px">Rechnungsadresse</h3><div class="form"><div class="fld"><label>Vorname</label><input></div><div class="fld"><label>Nachname</label><input></div><div class="fld w"><label>E-Mail</label><input></div><div class="fld w"><label>Strasse und Nr.</label><input></div><div class="fld"><label>PLZ</label><input></div><div class="fld"><label>Ort</label><input></div><div class="fld w"><label>Land</label><select><option>Schweiz</option><option>Liechtenstein</option></select></div></div>
+<h3 class="H" style="font-size:28px;margin:40px 0 16px">Zahlungsart</h3><div class="pay"><label class="on"><span class="radio"></span>Kreditkarte / Apple Pay / Google Pay<small>WooPayments</small></label><label><span class="radio"></span>PayPal</label><label><span class="radio"></span>Banküberweisung</label></div></div>
+<div class="card sum"><h3 class="H">Deine Bestellung</h3><div class="r"><span>PALIS – konfiguriert × 1</span><span>CHF —</span></div><div class="r"><span>Versand</span><span>CHF —</span></div><div class="r tot"><span>Total</span><span>CHF —</span></div><p style="font-size:13px;margin:16px 0">Mit der Bestellung akzeptierst du die <a href="rechtliches.html" style="text-decoration:underline">AGB</a> und die <a href="rechtliches.html" style="text-decoration:underline">Datenschutzerklärung</a>.</p><a class="pb acc full" href="#">Zahlungspflichtig bestellen</a></div></div></main>
+<footer>
+  <div><img src="../img/logo_white.svg" style="height:38px" alt=""><p style="margin-top:22px;color:#999;line-height:1.6;max-width:300px">MUSIK TRIFFT TISCHTENNIS. Mehr als ein Schläger. Ein Instrument für Spieler mit Anspruch.</p></div>
+  <div><h4>INFO</h4><a href="ueber-uns.html">Über uns</a><a href="kontakt.html">Kontakt</a></div>
+  <div><h4>SERVICE</h4><a href="rechtliches.html">AGB</a><a href="rechtliches.html">Versand &amp; Lieferung</a><a href="rechtliches.html">Widerrufsbelehrung</a><a href="rechtliches.html">Zahlungsarten</a></div>
+  <div><h4>RECHTLICHES</h4><a href="rechtliches.html">Datenschutzerklärung</a><a href="rechtliches.html">Impressum</a></div>
+  <div class="bot">© RESONANT · Swiss made</div>
+</footer><script src="../concept.js"></script></body></html>
