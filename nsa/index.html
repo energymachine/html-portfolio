@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NextGi Secure Access — Visual Identity Proposal</title>
+<meta name="description" content="Contest proposal: complete visual identity for NextGi Secure Access (NSA).">
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A1633;--deep:#122A5C;--blue:#2563EB;--teal:#14D3C1;--teal-dk:#0FA697;--ink:#0B1220;--muted:#5B6782;--line:#E3E8F0;--paper:#F7F9FC}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+img{display:block;max-width:100%;height:auto}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:10;background:rgba(247,249,252,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--navy)}
+.brand svg{width:32px;height:32px}
+.brand small{display:block;font:600 10px/1 Inter;letter-spacing:.28em;color:var(--muted)}
+.brand b{display:block;font:700 17px/1.2 Inter;letter-spacing:-.01em}
+nav a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;margin-left:22px}
+nav a:hover{color:var(--navy)}
+.hero{background:radial-gradient(ellipse at 70% 0%,rgba(20,211,193,.18),transparent 55%),linear-gradient(160deg,#14306A,#0B1838 55%,#070F24);color:#fff;padding:72px 0 56px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--teal)}
+.hero h1{font-size:clamp(34px,5vw,56px);line-height:1.08;letter-spacing:-.025em;margin:14px 0 18px;max-width:820px}
+.hero p{color:#AFC0DD;font-size:19px;max-width:720px}
+.hero img{margin-top:44px;border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:32px}
+.facts div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:16px 18px}
+.facts b{display:block;font-size:24px;letter-spacing:-.02em}
+.facts span{color:#AFC0DD;font-size:13.5px}
+section{padding:72px 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(26px,3.4vw,36px);letter-spacing:-.02em;line-height:1.15;color:var(--navy);margin:10px 0 16px}
+.lead{font-size:18px;color:var(--muted);max-width:760px}
+.eyebrow.dk{color:var(--teal-dk)}
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{font-size:17px;color:var(--navy);margin-bottom:6px}
+.card p{font-size:14.5px;color:var(--muted)}
+.card .n{font-size:12px;font-weight:700;color:var(--teal-dk);letter-spacing:.12em}
+.board{margin-top:28px;border-radius:14px;border:1px solid var(--line);box-shadow:0 18px 50px rgba(10,22,51,.10)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.grid2 figure{margin:0}
+.grid2 img{border-radius:12px;border:1px solid var(--line);box-shadow:0 12px 36px rgba(10,22,51,.08)}
+figcaption{font-size:13.5px;color:var(--muted);margin-top:8px}
+table{width:100%;border-collapse:collapse;margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:14px 18px;border-bottom:1px solid var(--line)}
+th{width:210px;color:var(--navy);font-weight:600;background:#FBFCFE}
+tr:last-child th,tr:last-child td{border-bottom:0}
+.note{margin-top:22px;background:#EAF0FE;border-left:3px solid var(--blue);border-radius:8px;padding:14px 18px;font-size:15px;color:#1E3A8A}
+footer{padding:40px 0 56px;color:var(--muted);font-size:13.5px}
+@media (max-width:820px){.facts,.pillars{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}nav{display:none}th{width:130px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="#top"><svg viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="hmg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#122A5C"/><stop offset="1" stop-color="#0A1633"/></linearGradient></defs><path d="M50 4.5 L84.5 16.2 Q88 17.4 88 21.1 V45.5 C88 68.5 72.6 85.6 50 95.5 C27.4 85.6 12 68.5 12 45.5 V21.1 Q12 17.4 15.5 16.2 Z" fill="url(#hmg)"/><path d="M34 69.5 V31 L64.8 65.2" fill="none" stroke="#FFFFFF" stroke-width="9.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M66 28.9 A8.6 8.6 0 0 1 70.2 45.0 L72.3 66.5 Q72.6 71.2 68 71.2 H64 Q59.4 71.2 59.7 66.5 L61.8 45.0 A8.6 8.6 0 0 1 66 28.9 Z" fill="#14D3C1"/></svg>
+    <span><small>NEXTGI</small><b>Secure Access</b></span></a>
+  <nav><a href="#concept">Concept</a><a href="#deliverables">Deliverables</a><a href="#work">Work</a><a href="#terms">Terms</a></nav>
+</div></header>
+
+<div class="hero" id="top"><div class="wrap">
+  <div class="eyebrow">Contest proposal · Visual identity</div>
+  <h1>NextGi Secure Access: a secure path, made visible.</h1>
+  <p>The complete, production-ready identity for NSA, delivered as the actual files rather than a concept: logo suite, cross-platform icons, tray states, installer art, light and dark UI, and a brand guide.</p>
+  <div class="facts">
+    <div><b>370</b><span>production files</span></div>
+    <div><b>3</b><span>platforms: Windows, macOS, Linux</span></div>
+    <div><b>5</b><span>tray states + animation</span></div>
+    <div><b>12</b><span>page brand guide</span></div>
+  </div>
+  <img src="img/identity_overview.jpg" alt="NSA identity overview: logo, app icon, dashboard, login and tray icons" width="1600" height="900">
+</div></div>
+
+<section id="concept"><div class="wrap">
+  <div class="eyebrow dk">01 · Concept</div>
+  <h2>One mark: protection, NextGi and access granted.</h2>
+  <p class="lead">A shield with your N drawn as one continuous line that ends in a keyhole. Access is granted only at the end of a verified path, so the mark is zero-trust drawn as a symbol.</p>
+  <div class="pillars">
+    <div class="card"><div class="n">01</div><h3>The shield</h3><p>Modern and slightly squared, so it reads as enterprise security, not consumer antivirus.</p></div>
+    <div class="card"><div class="n">02</div><h3>The N</h3><p>One unbroken stroke: the encrypted tunnel carrying every session from endpoint to network.</p></div>
+    <div class="card"><div class="n">03</div><h3>The keyhole</h3><p>The N's last stroke becomes a keyhole: access at the end of a verified path.</p></div>
+    <div class="card"><div class="n">04</div><h3>The grid</h3><p>100-unit grid, 9.6-unit stroke, so it stays sharp from a 16 px tray icon to a banner.</p></div>
+  </div>
+  <img class="board" src="img/brand_idea.jpg" alt="Mark construction" loading="lazy" width="1600" height="900">
+  <p class="note">Colours: <b>Vault Navy #0A1633</b> carries authority; <b>Signal Teal #14D3C1</b> is kept for moments of access. Type: <b>Inter</b> (SIL OFL), free for commercial use. A "by NextGi" lockup keeps NSA under the NextGi umbrella.</p>
+</div></section>
+
+<section id="deliverables"><div class="wrap">
+  <div class="eyebrow dk">02 · Deliverables</div>
+  <h2>Everything you asked for, already built.</h2>
+  <p class="lead">Every item comes as editable SVG plus production-ready exports.</p>
+  <table>
+    <tr><th>Logos</th><td>Horizontal and stacked primary lockups, compact "NSA", "by NextGi" endorsed lockup and standalone mark. Colour, reversed, black and white, as SVG (text outlined) and PNG.</td></tr>
+    <tr><th>App icons</th><td>Windows ICO (10 sizes, 16–256) plus Microsoft Store tiles · macOS ICNS and iconset (16–1024) · Linux icon-theme folders plus .desktop file · SVG masters, with a heavier-line version for 32 px and below.</td></tr>
+    <tr><th>System tray</th><td>Connected, disconnected, connecting (4-frame animation), error, update. Colour, dark-taskbar and macOS menu-bar versions as ICO, PNG and SVG. Shape changes per state, so colour-blind users can tell them apart.</td></tr>
+    <tr><th>Installer &amp; setup</th><td>WiX, NSIS and Inno Setup art at their required sizes (BMP and PNG, 100% and 200%) · macOS installer background · Linux installer header.</td></tr>
+    <tr><th>Splash screens</th><td>Light and dark, at 1×, 2× and 3×.</td></tr>
+    <tr><th>UI assets</th><td>Login, sidebar navigation with dashboard, About dialog and UI kit in light and dark · 18 navigation icons · colour and font tokens as JSON and CSS.</td></tr>
+    <tr><th>Brand guide</th><td>12-page PDF: concept, logo suite, clear space and minimum sizes, misuse, colour, typography, icons, tray, setup, UI and voice.</td></tr>
+  </table>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <div class="eyebrow dk">03 · The work</div>
+  <h2>A look inside the package.</h2>
+  <div class="grid2">
+    <figure><img src="img/logo_suite.jpg" alt="Logo suite" loading="lazy" width="1600" height="900"><figcaption>Logo suite: five lockups</figcaption></figure>
+    <figure><img src="img/app_icons.jpg" alt="Application icons" loading="lazy" width="1600" height="900"><figcaption>App icons for Windows, macOS and Linux</figcaption></figure>
+    <figure><img src="img/system_tray.jpg" alt="System tray icons" loading="lazy" width="1600" height="900"><figcaption>Tray states, readable at 16 px</figcaption></figure>
+    <figure><img src="img/installer_splash.jpg" alt="Installer and splash" loading="lazy" width="1600" height="900"><figcaption>Installer and splash screens</figcaption></figure>
+    <figure><img src="img/product_ui.jpg" alt="Product UI light and dark" loading="lazy" width="1600" height="900"><figcaption>Navigation and dashboard, light and dark</figcaption></figure>
+    <figure><img src="img/login_about.jpg" alt="Login and About screens" loading="lazy" width="1600" height="900"><figcaption>Login, About and brand voice</figcaption></figure>
+  </div>
+  <p class="note">Naming recommendation: lead with the full name "NextGi Secure Access" in public and use "NSA" only inside the product and internal documents, to avoid confusion with the US National Security Agency.</p>
+</div></section>
+
+<section id="terms"><div class="wrap">
+  <div class="eyebrow dk">04 · Terms</div>
+  <h2>Pricing, timeline, revisions and rights.</h2>
+  <table>
+    <tr><th>Past work</th><td><a href="../resonant/proposal/">Resonant: 3D blade configurator and website restyle (contest winner)</a> · <a href="../">Portfolio</a></td></tr>
+    <tr><th>Pricing</th><td>The $500 contest award covers the full package above. Extras such as a website hero, a marketing kit or a motion logo are quoted separately.</td></tr>
+    <tr><th>Timeline</th><td>Final files within 24–48 hours of award.</td></tr>
+    <tr><th>Revisions</th><td>Unlimited revisions to the chosen direction until you're happy, usually turned around within 24 hours.</td></tr>
+    <tr><th>Rights</th><td>Full IP and commercial usage rights transfer to NextGi on award. All fonts are SIL OFL, so there are no licence fees.</td></tr>
+  </table>
+</div></section>
+
+<footer><div class="wrap">Prepared for NextGi · November 2026</div></footer>
+</body>
+</html>
