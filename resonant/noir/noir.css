@@ -131,3 +131,27 @@ input:focus,textarea:focus,select:focus{border-color:var(--noir-gold)!important;
 /* ---------- login popup (Easy Login) ---------- */
 .xoo-el-container .xoo-el-inmodal,.xoo-el-form-container{background:#0f0f0f!important;color:var(--noir-text)}
 .xoo-el-tabs li{background:#1b1b1b!important;color:var(--noir-ink)!important}.xoo-el-tabs li.xoo-el-active{background:var(--noir-gold)!important;color:#111!important}
+/* ---------- Elementor page backgrounds -> Noir ---------- */
+body[class*="elementor-page-"],body.woocommerce-page,body.archive,body.single{background-color:var(--noir-bg)!important}
+.elementor[data-elementor-type="wp-page"] > .e-con,.elementor[data-elementor-type="wp-page"] > .elementor-section,
+.elementor[data-elementor-type="wp-page"] .elementor-top-section,.elementor[data-elementor-type="wp-page"] .elementor-widget-container{background-color:transparent!important}
+.elementor[data-elementor-type="wp-page"] .noir-band{background-color:var(--noir-bg2)!important;border-top:1px solid var(--noir-line);border-bottom:1px solid var(--noir-line)}
+.sc_blogger_item,.sc_blogger_item_header,.sc_blogger_item_body{background-color:var(--noir-bg2)!important}
+.sc_blogger_item{border:1px solid var(--noir-line);overflow:hidden}
+.sc_blogger_item_title a{color:var(--noir-ink)!important}.sc_blogger_item_title a:hover{color:var(--noir-gold)!important}
+.sc_blogger_item .sc_blogger_item_excerpt,.sc_blogger_item .post_meta{color:var(--noir-mute)!important}
+/* ---------- Noir hero (home) ---------- */
+.noir-hero{position:relative;min-height:calc(100vh - 110px)!important;overflow:hidden;background-size:cover!important;background-position:62% center!important}
+.noir-hero:before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,#0a0a0af0 0%,#0a0a0aa8 40%,#0a0a0a10 75%),linear-gradient(#0a0a0a00 70%,#0a0a0a)}
+.noir-hero>.e-con-inner,.noir-hero>*{position:relative;z-index:1}
+.noir-hero .elementor-heading-title{text-transform:uppercase}
+.noir-hero h1.elementor-heading-title{font-size:clamp(46px,6.4vw,104px)!important;line-height:.92!important;font-weight:700!important;max-width:760px}
+.noir-eyebrow .elementor-heading-title{font:600 12px/1 var(--noir-head)!important;letter-spacing:.32em!important;color:var(--noir-gold)!important;display:inline-flex;align-items:center;gap:12px}
+.noir-eyebrow .elementor-heading-title:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--noir-gold);box-shadow:0 0 0 4px var(--noir-bg),0 0 0 5px var(--noir-gold);flex:none}
+.noir-hero .elementor-widget-text-editor{max-width:480px;font-size:19px;color:#d6d3cc}
+.noir-ghost .elementor-button{background:transparent!important;color:var(--noir-ink)!important;border:1px solid #ffffff55!important}
+.noir-ghost .elementor-button:hover{border-color:var(--noir-gold)!important;color:var(--noir-gold)!important}
+.noir-hero .elementor-button{padding:17px 28px!important;font-size:13px!important}
+@media(max-width:767px){.noir-hero{min-height:82vh!important;background-position:72% center!important}.noir-hero:before{background:linear-gradient(#0a0a0a40,#0a0a0ae6 65%)}}
+/* section heads */
+.noir-sh .elementor-heading-title{font-size:clamp(34px,4vw,62px)!important;line-height:.95!important;text-transform:uppercase}
