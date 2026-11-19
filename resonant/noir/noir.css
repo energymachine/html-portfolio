@@ -181,3 +181,10 @@ a.reset_variations,.reset_variations{background:none!important;border:0!importan
 .woocommerce-checkout #payment .payment_box,.woocommerce-checkout #payment .payment_box p,.woocommerce-privacy-policy-text p{font-size:15px!important;line-height:1.6!important}
 .woocommerce table.shop_table td.product-name a,.woocommerce table.shop_table .product-name{font-family:var(--noir-head)!important;font-stretch:108%;letter-spacing:.02em}
 .woocommerce .wc-backward,.woocommerce a.button.wc-backward,.woocommerce .continue_shopping,.woocommerce a.button.continue{background:transparent!important;color:var(--noir-ink)!important;border:1px solid #ffffff55!important}
+@media(max-width:767px){
+ .noir-hero h1.elementor-heading-title{font-size:38px!important;font-stretch:108%!important}
+ .noir-sh .elementor-heading-title,.sc_item_title{font-size:28px!important}
+ .noir-hero{padding-left:20px!important;padding-right:20px!important}
+ .noir-hero .elementor-widget-text-editor{font-size:17px}
+}
+.elementor-widget-text-editor p{line-height:1.75}
