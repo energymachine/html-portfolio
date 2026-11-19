@@ -50,6 +50,8 @@
   --e-global-color-primary:#FAA719;--e-global-color-secondary:#f3f1ec;--e-global-color-text:#c9c6bf;--e-global-color-accent:#FAA719;
 }
 /* ---------- base ---------- */
+h1,h2,h3,h4,h5,h6,.elementor-heading-title,.sc_item_title,.product_title,.woocommerce-loop-product__title,.post_title,.sc_blogger_item_title,.elementor-widget-heading .elementor-heading-title{font-family:var(--noir-head)!important}
+body,p,.elementor-widget-text-editor,.elementor-widget-text-editor p,.woocommerce-product-details__short-description,.woocommerce-Tabs-panel,input,textarea,select{font-family:var(--noir-body)!important}
 html body,body .body_wrap,body .page_wrap,body .page_content_wrap,body .content_wrap,body .content{background-color:var(--noir-bg)}
 body{color:var(--noir-text);font-family:var(--noir-body);-webkit-font-smoothing:antialiased}
 h1,h2,h3,h4,h5,h6,.sc_item_title,.elementor-heading-title,.product_title,.woocommerce-loop-product__title,.post_title{font-stretch:116%;color:var(--noir-ink)}
@@ -142,7 +144,7 @@ body[class*="elementor-page-"],body.woocommerce-page,body.archive,body.single{ba
 .sc_blogger_item .sc_blogger_item_excerpt,.sc_blogger_item .post_meta{color:var(--noir-mute)!important}
 /* ---------- Noir hero (home) ---------- */
 .noir-hero{position:relative;min-height:calc(100vh - 110px)!important;overflow:hidden;background-size:cover!important;background-position:62% center!important}
-.noir-hero:before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,#0a0a0af0 0%,#0a0a0aa8 40%,#0a0a0a10 75%),linear-gradient(#0a0a0a00 70%,#0a0a0a)}
+.noir-hero:before{content:""!important;display:block!important;opacity:1!important;mix-blend-mode:normal!important;position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,#0a0a0af0 0%,#0a0a0aa8 40%,#0a0a0a10 75%),linear-gradient(#0a0a0a00 70%,#0a0a0a)}
 .noir-hero>.e-con-inner,.noir-hero>*{position:relative;z-index:1}
 .noir-hero .elementor-heading-title{text-transform:uppercase}
 .noir-hero h1.elementor-heading-title{font-size:clamp(46px,6.4vw,104px)!important;line-height:.92!important;font-weight:700!important;max-width:760px}
