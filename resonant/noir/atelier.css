@@ -162,3 +162,5 @@ h1,h2,h3,h4,h5,.elementor-heading-title,.sc_item_title,.product_title,.post_titl
 .search_button,.top_panel .search_submit{color:#141414!important}
 .post_meta_item.post_categories a{background:#141414!important;color:#fff!important;border-radius:30px!important}
 .post_meta_item.post_categories a:hover{background:var(--r-gold)!important;color:#141414!important}
+body .top_panel .elementor-nav-menu .trp-ls-language-name{color:#9a958b!important}
+body .top_panel .elementor-nav-menu .current-language-menu-item .trp-ls-language-name{color:#141414!important;font-weight:700}
