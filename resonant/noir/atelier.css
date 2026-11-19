@@ -160,3 +160,5 @@ h1,h2,h3,h4,h5,.elementor-heading-title,.sc_item_title,.product_title,.post_titl
 .elementor-element-8b1c325 .sc_item_title{font-size:clamp(26px,2.3vw,38px)!important;font-stretch:100%!important;line-height:1.08!important}
 .trp-ls-language-name,.top_panel .trp-ls-language-name{color:#141414!important}
 .search_button,.top_panel .search_submit{color:#141414!important}
+.post_meta_item.post_categories a{background:#141414!important;color:#fff!important;border-radius:30px!important}
+.post_meta_item.post_categories a:hover{background:var(--r-gold)!important;color:#141414!important}
