@@ -208,3 +208,26 @@ a.reset_variations,.reset_variations{background:none!important;border:0!importan
 .content_wrap:has(.resonant-cfg-wrap){display:block!important;width:100%!important;padding:0!important}
 .content_wrap:has(.resonant-cfg-wrap)>.content{width:100%!important;max-width:none!important;float:none!important;margin:0!important;padding:0!important}
 body:has(.resonant-cfg-wrap){overflow-x:hidden}
+/* ---------- Black Friday landing ---------- */
+.bf-hero{position:relative;overflow:hidden;min-height:calc(100vh - 110px);background:radial-gradient(900px 600px at 78% 40%,rgba(250,167,25,.16),transparent 60%),#050505!important}
+.bf-hero:after{content:"";position:absolute;right:-12vw;top:50%;width:min(70vw,900px);aspect-ratio:1;transform:translateY(-50%);border-radius:50%;background:repeating-radial-gradient(circle,#0000 0 34px,rgba(255,255,255,.07) 35px 36px);pointer-events:none;z-index:0}
+.bf-hero>*{position:relative;z-index:1}
+.bf-hero h1.elementor-heading-title{font-size:clamp(64px,10vw,170px)!important;line-height:.86!important;letter-spacing:-.02em!important}
+.bf-offer .elementor-heading-title{font-size:clamp(28px,3.4vw,52px)!important;color:var(--noir-gold)!important;line-height:1!important}
+.bf-hero .elementor-widget-text-editor{max-width:520px;font-size:18px;color:#d6d3cc}
+.bf-count{display:flex;gap:10px;margin:6px 0 4px}
+.bf-count div{min-width:84px;padding:14px 10px 10px;border:1px solid #2a2a2a;background:#0f0f0f;text-align:center}
+.bf-count b{display:block;font:700 40px/1 var(--noir-head);font-stretch:116%;color:#f3f1ec}
+.bf-count span{display:block;margin-top:6px;font:600 10px/1 var(--noir-body);letter-spacing:.2em;text-transform:uppercase;color:var(--noir-mute)}
+.bf-count-label{font:600 11px var(--noir-body);letter-spacing:.24em;text-transform:uppercase;color:var(--noir-mute);margin-top:10px}
+.bf-feat{border:1px solid var(--noir-line);background:var(--noir-bg2);padding:34px 30px!important}
+.bf-feat .elementor-heading-title{font-size:22px!important}
+.bf-feat .bf-num .elementor-heading-title{font-size:44px!important;color:var(--noir-gold)!important}
+.bf-fine{font-size:13px!important;color:var(--noir-mute)!important;border-top:1px solid var(--noir-line);padding-top:24px}
+.bf-band{background:var(--noir-gold)!important}
+.bf-band .elementor-heading-title{color:#111!important}
+.bf-band .elementor-widget-text-editor,.bf-band .elementor-widget-text-editor p{color:#2a1d00!important}
+.bf-band .elementor-button{background:#111!important;color:#fff!important;border-color:#111!important}
+.bf-band .elementor-button:hover{background:#000!important;color:var(--noir-gold)!important}
+.bf-products .woocommerce ul.products{margin-top:10px}
+@media(max-width:767px){.bf-count div{min-width:0;flex:1;padding:12px 4px 8px}.bf-count b{font-size:28px}.bf-hero:after{right:-40vw;width:120vw}}
