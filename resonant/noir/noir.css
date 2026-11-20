@@ -204,3 +204,7 @@ a.reset_variations,.reset_variations{background:none!important;border:0!importan
 .content_wrap:has(.resonant-cfg-wrap),.content:has(.resonant-cfg-wrap){max-width:none!important}
 .resonant-cfg{height:calc(100vh - 110px)!important}
 @media(max-width:767px){.resonant-cfg{height:calc(100svh - 80px)!important;min-height:560px!important}}
+.page_content_wrap:has(.resonant-cfg-wrap) .sidebar,.page_content_wrap:has(.resonant-cfg-wrap) .sidebar_wrap{display:none!important}
+.content_wrap:has(.resonant-cfg-wrap){display:block!important;width:100%!important;padding:0!important}
+.content_wrap:has(.resonant-cfg-wrap)>.content{width:100%!important;max-width:none!important;float:none!important;margin:0!important;padding:0!important}
+body:has(.resonant-cfg-wrap){overflow-x:hidden}
