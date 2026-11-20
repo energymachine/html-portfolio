@@ -231,3 +231,8 @@ body:has(.resonant-cfg-wrap){overflow-x:hidden}
 .bf-band .elementor-button:hover{background:#000!important;color:var(--noir-gold)!important}
 .bf-products .woocommerce ul.products{margin-top:10px}
 @media(max-width:767px){.bf-count div{min-width:0;flex:1;padding:12px 4px 8px}.bf-count b{font-size:28px}.bf-hero:after{right:-40vw;width:120vw}}
+.page_content_wrap:has(.bf-hero) .sidebar,.page_content_wrap:has(.bf-hero) .sidebar_wrap{display:none!important}
+.content_wrap:has(.bf-hero)>.content{width:100%!important;max-width:none!important;float:none!important}
+.page_content_wrap:has(.bf-hero){padding-top:0!important}
+.bf-hero,.bf-band{width:100vw!important;max-width:100vw!important;margin-left:calc(50% - 50vw)!important;margin-right:calc(50% - 50vw)!important}
+body:has(.bf-hero){overflow-x:hidden}
