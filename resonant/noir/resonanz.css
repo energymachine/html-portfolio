@@ -164,3 +164,6 @@ input:focus,textarea:focus,select:focus{border-color:#0d0d0d!important;outline:n
 }
 .top_panel .elementor-menu-toggle,.top_panel .elementor-menu-toggle i,.top_panel .sc_layouts_item_icon,.top_panel .sc_layouts_item_icon:before,.top_panel .menu_mobile_button,.top_panel .sc_layouts_menu_mobile_button a,.top_panel .sc_layouts_iconed_text_icon,.top_panel .sc_layouts_cart_icon{color:#fff!important}
 .top_panel svg,.top_panel .elementor-menu-toggle svg{fill:#fff!important;color:#fff!important}
+.top_panel .sc_layouts_menu_mobile_button,.top_panel .sc_layouts_menu_mobile_button *,.top_panel .sc_layouts_cart *{color:#fff!important}
+.rc-hero{margin-left:0!important;margin-right:0!important;max-width:100%!important}
+body{overflow-x:hidden}
