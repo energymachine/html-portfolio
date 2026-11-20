@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Inter:wght@400;500;600&display=swap');
 /* =========================================================
-   RESONANT – NOIR SKIN  (one snippet: deactivate = old look)
+   RESONANT – NOIR DESIGN (Version A)  (one snippet: deactivate = old look)
    ========================================================= */
 :root{
   --noir-bg:#0a0a0a;--noir-bg2:#141414;--noir-bg3:#1b1b1b;--noir-line:#262626;
@@ -137,7 +137,7 @@ input:focus,textarea:focus,select:focus{border-color:var(--noir-gold)!important;
 body[class*="elementor-page-"],body.woocommerce-page,body.archive,body.single{background-color:var(--noir-bg)!important}
 .elementor[data-elementor-type="wp-page"] > .e-con,.elementor[data-elementor-type="wp-page"] > .elementor-section,
 .elementor[data-elementor-type="wp-page"] .elementor-top-section,.elementor[data-elementor-type="wp-page"] .elementor-widget-container{background-color:transparent!important}
-.elementor[data-elementor-type="wp-page"] .noir-band{background-color:var(--noir-bg2)!important;border-top:1px solid var(--noir-line);border-bottom:1px solid var(--noir-line)}
+.elementor[data-elementor-type="wp-page"] .r-band{background-color:var(--noir-bg2)!important;border-top:1px solid var(--noir-line);border-bottom:1px solid var(--noir-line)}
 .sc_blogger_item,.sc_blogger_item_header,.sc_blogger_item_body{background-color:var(--noir-bg2)!important}
 .sc_blogger_item{border:1px solid var(--noir-line);overflow:hidden}
 .sc_blogger_item_title a{color:var(--noir-ink)!important}.sc_blogger_item_title a:hover{color:var(--noir-gold)!important}
@@ -148,21 +148,21 @@ body[class*="elementor-page-"],body.woocommerce-page,body.archive,body.single{ba
 .noir-hero>.e-con-inner,.noir-hero>*{position:relative;z-index:1}
 .noir-hero .elementor-heading-title{text-transform:uppercase}
 .noir-hero h1.elementor-heading-title{font-size:clamp(46px,6.4vw,104px)!important;line-height:.92!important;font-weight:700!important;max-width:760px}
-.noir-eyebrow .elementor-heading-title{font:600 12px/1 var(--noir-head)!important;letter-spacing:.32em!important;color:var(--noir-gold)!important;display:inline-flex;align-items:center;gap:12px}
-.noir-eyebrow .elementor-heading-title:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--noir-gold);box-shadow:0 0 0 4px var(--noir-bg),0 0 0 5px var(--noir-gold);flex:none}
+.r-eyebrow .elementor-heading-title{font:600 12px/1 var(--noir-head)!important;letter-spacing:.32em!important;color:var(--noir-gold)!important;display:inline-flex;align-items:center;gap:12px}
+.r-eyebrow .elementor-heading-title:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--noir-gold);box-shadow:0 0 0 4px var(--noir-bg),0 0 0 5px var(--noir-gold);flex:none}
 .noir-hero .elementor-widget-text-editor{max-width:480px;font-size:19px;color:#d6d3cc}
-.noir-ghost .elementor-button{background:transparent!important;color:var(--noir-ink)!important;border:1px solid #ffffff55!important}
-.noir-ghost .elementor-button:hover{border-color:var(--noir-gold)!important;color:var(--noir-gold)!important}
+.r-ghost .elementor-button{background:transparent!important;color:var(--noir-ink)!important;border:1px solid #ffffff55!important}
+.r-ghost .elementor-button:hover{border-color:var(--noir-gold)!important;color:var(--noir-gold)!important}
 .noir-hero .elementor-button{padding:17px 28px!important;font-size:13px!important}
 @media(max-width:767px){.noir-hero{min-height:82vh!important;background-position:72% center!important}.noir-hero:before{background:linear-gradient(#0a0a0a40,#0a0a0ae6 65%)}}
 /* section heads */
-.noir-sh .elementor-heading-title{font-size:clamp(34px,4vw,62px)!important;line-height:.95!important;text-transform:uppercase}
+.r-sh .elementor-heading-title{font-size:clamp(34px,4vw,62px)!important;line-height:.95!important;text-transform:uppercase}
 /* ---------- long German words ---------- */
 h1,h2,h3,h4,h5,h6,.sc_item_title,.elementor-heading-title{-webkit-hyphens:auto;hyphens:auto;overflow-wrap:break-word;word-break:normal}
 .sc_item_title{font-size:clamp(30px,3.4vw,54px)!important;line-height:1!important}
 .sc_blogger_item_title,.sc_blogger_item_title a{font-size:22px!important;line-height:1.15!important;font-stretch:106%!important}
 .e-loop-item .product_title,.e-loop-item .elementor-heading-title{font-size:clamp(20px,1.6vw,26px)!important;line-height:1.08!important}
-.noir-sh .elementor-heading-title{font-size:clamp(30px,3.6vw,58px)!important}
+.r-sh .elementor-heading-title{font-size:clamp(30px,3.6vw,58px)!important}
 .sc_item_title{font-size:clamp(28px,2.5vw,40px)!important;font-stretch:108%!important;line-height:1.04!important}
 .elementor-element-14321f26 .sc_item_title,.sc_item_title.sc_align_center{font-size:clamp(32px,3.4vw,54px)!important}
 /* ---------- shop details ---------- */
@@ -183,9 +183,18 @@ a.reset_variations,.reset_variations{background:none!important;border:0!importan
 .woocommerce .wc-backward,.woocommerce a.button.wc-backward,.woocommerce .continue_shopping,.woocommerce a.button.continue{background:transparent!important;color:var(--noir-ink)!important;border:1px solid #ffffff55!important}
 @media(max-width:767px){
  .noir-hero h1.elementor-heading-title{font-size:38px!important;font-stretch:108%!important}
- .noir-sh .elementor-heading-title,.sc_item_title{font-size:28px!important}
+ .r-sh .elementor-heading-title,.sc_item_title{font-size:28px!important}
  .noir-hero{padding-left:20px!important;padding-right:20px!important}
  .noir-hero .elementor-widget-text-editor{font-size:17px}
 }
 .elementor-widget-text-editor p{line-height:1.75}
 @media(max-width:767px){.elementor-element-ad0544d,.elementor-element-ad0544d>.e-con-inner{padding-left:20px!important;padding-right:20px!important}}
+
+/* ---------- Version A refinements ---------- */
+.r-band{margin-left:0!important;margin-right:0!important}
+.e-loop-item{display:flex;flex-direction:column}
+.e-loop-item .elementor-widget-theme-post-featured-image img{background:#e9e6df;aspect-ratio:1/1;object-fit:contain}
+.e-loop-item .product_title,.e-loop-item .elementor-heading-title{font-size:clamp(18px,1.4vw,22px)!important;letter-spacing:.06em!important;line-height:1.15!important}
+.e-loop-item .price,.e-loop-item .price .amount{font-size:16px!important}
+.noir-scroll{position:absolute;right:5vw;bottom:6vh;font:600 11px var(--noir-head);letter-spacing:.3em;color:var(--noir-mute);writing-mode:vertical-rl;z-index:2}
+.noir-hero .r-eyebrow{margin-bottom:6px}
