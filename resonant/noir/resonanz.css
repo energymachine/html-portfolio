@@ -162,3 +162,5 @@ input:focus,textarea:focus,select:focus{border-color:#0d0d0d!important;outline:n
  .r-band{margin-left:0!important;margin-right:0!important}
  .elementor-element-ad0544d,.elementor-element-ad0544d>.e-con-inner{padding-left:20px!important;padding-right:20px!important}
 }
+.top_panel .elementor-menu-toggle,.top_panel .elementor-menu-toggle i,.top_panel .sc_layouts_item_icon,.top_panel .sc_layouts_item_icon:before,.top_panel .menu_mobile_button,.top_panel .sc_layouts_menu_mobile_button a,.top_panel .sc_layouts_iconed_text_icon,.top_panel .sc_layouts_cart_icon{color:#fff!important}
+.top_panel svg,.top_panel .elementor-menu-toggle svg{fill:#fff!important;color:#fff!important}
