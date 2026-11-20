@@ -198,3 +198,9 @@ a.reset_variations,.reset_variations{background:none!important;border:0!importan
 .e-loop-item .price,.e-loop-item .price .amount{font-size:16px!important}
 .noir-scroll{position:absolute;right:5vw;bottom:6vh;font:600 11px var(--noir-head);letter-spacing:.3em;color:var(--noir-mute);writing-mode:vertical-rl;z-index:2}
 .noir-hero .r-eyebrow{margin-bottom:6px}
+/* ---------- configurator page ---------- */
+.resonant-cfg-wrap{width:100vw;position:relative;left:50%;margin-left:-50vw;background:#0a0a0a}
+.page_content_wrap:has(.resonant-cfg-wrap){padding-top:0!important;padding-bottom:0!important}
+.content_wrap:has(.resonant-cfg-wrap),.content:has(.resonant-cfg-wrap){max-width:none!important}
+.resonant-cfg{height:calc(100vh - 110px)!important}
+@media(max-width:767px){.resonant-cfg{height:calc(100svh - 80px)!important;min-height:560px!important}}
