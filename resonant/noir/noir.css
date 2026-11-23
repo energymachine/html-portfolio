@@ -250,5 +250,11 @@ body:has(.bf-hero){overflow-x:hidden}
 .bw-img img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--noir-line)}
 .top_panel .menu-bw>a,.top_panel .menu-bw>a .elementor-item{color:var(--noir-gold)!important}
 /* ---------- product photos with white background: sit on a warm studio tile ---------- */
-.e-loop-item .elementor-widget-theme-post-featured-image,.woocommerce ul.products li.product .post_featured,.woocommerce-product-gallery__image,.flex-control-thumbs li,.woocommerce table.shop_table .product-thumbnail{background:#e4e0d8!important}
-.e-loop-item .elementor-widget-theme-post-featured-image img,.woocommerce ul.products li.product .post_featured img,.woocommerce-product-gallery__image img,.flex-control-thumbs li img,.woocommerce table.shop_table .product-thumbnail img{mix-blend-mode:multiply;background:transparent!important}
+.e-loop-item .elementor-widget-theme-post-featured-image,.woocommerce ul.products li.product .post_featured,.woocommerce-product-gallery__image,.flex-control-thumbs li,.woocommerce table.shop_table .product-thumbnail{background:radial-gradient(120% 90% at 50% 42%,#26262a 0%,#151517 72%)!important}
+.e-loop-item .elementor-widget-theme-post-featured-image img,.woocommerce ul.products li.product .post_featured img,.woocommerce-product-gallery__image img,.flex-control-thumbs li img,.woocommerce table.shop_table .product-thumbnail img{mix-blend-mode:normal;background:transparent!important}
+
+/* countdown: stable digits */
+.bf-count{width:100%;max-width:400px}
+.bf-count div{flex:1 1 0;min-width:0}
+.bf-count b{white-space:nowrap;font-variant-numeric:tabular-nums;letter-spacing:0!important}
+@media(max-width:767px){.bf-count{max-width:none}.bf-count b{font-size:30px;font-stretch:100%}.bf-count span{letter-spacing:.12em}}
