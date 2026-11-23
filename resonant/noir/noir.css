@@ -258,3 +258,4 @@ body:has(.bf-hero){overflow-x:hidden}
 .bf-count div{flex:1 1 0;min-width:0}
 .bf-count b{white-space:nowrap;font-variant-numeric:tabular-nums;letter-spacing:0!important}
 @media(max-width:767px){.bf-count{max-width:none}.bf-count b{font-size:30px;font-stretch:100%}.bf-count span{letter-spacing:.12em}}
+.elementor-widget:has(.bf-count){align-self:stretch;width:100%;max-width:440px}
