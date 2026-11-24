@@ -348,3 +348,9 @@ dl.variation dt{font-family:var(--noir-head)!important;font-stretch:112%;font-si
 .woocommerce-message .button,.woocommerce-message a.wc-forward,.woocommerce-info .button{order:2;margin:0 0 0 auto!important;float:none!important;background:var(--noir-gold)!important;color:#111!important;border:0!important;border-radius:2px!important;padding:12px 18px!important;font:800 12px/1 var(--noir-head)!important;font-stretch:112%;letter-spacing:.14em!important;text-transform:uppercase!important;white-space:nowrap;box-shadow:none!important}
 .woocommerce-message .button:hover,.woocommerce-message a.wc-forward:hover,.woocommerce-info .button:hover{background:#fff!important;color:#111!important}
 @media(max-width:600px){.woocommerce-message .button,.woocommerce-message a.wc-forward{margin:4px 0 0!important;width:100%;text-align:center}}
+.woocommerce .woocommerce-message a.button,.woocommerce .woocommerce-message a.wc-forward,.woocommerce-page .woocommerce-message a.button,.woocommerce .woocommerce-info a.button{background:var(--noir-gold)!important;color:#111!important;border:0!important;text-decoration:none!important}
+.woocommerce .woocommerce-message a.button:hover,.woocommerce .woocommerce-message a.wc-forward:hover{background:#fff!important;color:#111!important}
+.woocommerce-message::before,.woocommerce-info::before,.woocommerce-error::before{top:18px!important;transform:none!important}
+@media(min-width:601px){.woocommerce-message::before,.woocommerce-info::before,.woocommerce-error::before{top:50%!important;transform:translateY(-50%)!important}}
+.woocommerce .woocommerce-message a.button.wc-forward:not(.checkout),.woocommerce-page .woocommerce-message a.button.wc-forward:not(.checkout){background:var(--noir-gold)!important;color:#111!important;border:0!important}
+.woocommerce .woocommerce-message a.button.wc-forward:not(.checkout):hover{background:#fff!important;color:#111!important}
