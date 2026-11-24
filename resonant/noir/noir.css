@@ -414,3 +414,9 @@ dl.variation dt{font-family:var(--noir-head)!important;font-stretch:112%;font-si
 /* shop archive: Black Friday button under price */
 li.product .bf-card-ctaw--shop{justify-content:flex-start;margin:14px 0 4px}
 li.product .bf-card-ctaw--shop .bf-card-cta{margin:0!important;max-width:none!important;width:auto!important;padding:13px 18px!important;display:inline-block!important}
+/* shop grid: card styling on inner item so the photo fills the card */
+.woocommerce ul.products li.product{background:transparent!important;border:0!important;transform:none!important}
+.woocommerce ul.products li.product:hover{background:transparent!important}
+.woocommerce ul.products li.product .post_item{background:var(--noir-bg2)!important;border:1px solid var(--noir-line)!important;height:100%;transition:background .3s,transform .4s,border-color .3s}
+.woocommerce ul.products li.product:hover .post_item{background:var(--noir-bg3)!important;border-color:#3a3a3a!important;transform:translateY(-4px)}
+.woocommerce ul.products li.product .post_featured{margin:0!important}
