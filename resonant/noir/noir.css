@@ -250,7 +250,7 @@ body:has(.bf-hero){overflow-x:hidden}
 .bw-img img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--noir-line)}
 .top_panel .menu-bw>a,.top_panel .menu-bw>a .elementor-item{color:var(--noir-gold)!important}
 /* ---------- product photos with white background: sit on a warm studio tile ---------- */
-.e-loop-item .elementor-widget-theme-post-featured-image,.woocommerce ul.products li.product .post_featured,.woocommerce-product-gallery__image,.flex-control-thumbs li,.woocommerce table.shop_table .product-thumbnail{background:radial-gradient(120% 90% at 50% 42%,#26262a 0%,#151517 72%)!important}
+.e-loop-item .elementor-widget-theme-post-featured-image,.woocommerce ul.products li.product .post_featured,.woocommerce-product-gallery__image,.flex-control-thumbs li,.woocommerce table.shop_table .product-thumbnail{background:#f9faf5!important}
 .e-loop-item .elementor-widget-theme-post-featured-image img,.woocommerce ul.products li.product .post_featured img,.woocommerce-product-gallery__image img,.flex-control-thumbs li img,.woocommerce table.shop_table .product-thumbnail img{mix-blend-mode:normal;background:transparent!important}
 
 /* countdown: stable digits */
@@ -259,3 +259,19 @@ body:has(.bf-hero){overflow-x:hidden}
 .bf-count b{white-space:nowrap;font-variant-numeric:tabular-nums;letter-spacing:0!important}
 @media(max-width:767px){.bf-count{max-width:none}.bf-count b{font-size:30px;font-stretch:100%}.bf-count span{letter-spacing:.12em}}
 .elementor-widget:has(.bf-count){align-self:stretch;width:100%;max-width:440px}
+/* === review fixes 24 Nov === */
+:root{--theme-font-h1_font-family:var(--noir-head);--theme-font-h2_font-family:var(--noir-head);--theme-font-h3_font-family:var(--noir-head);--theme-font-h4_font-family:var(--noir-head);--theme-font-h5_font-family:var(--noir-head);--theme-font-h6_font-family:var(--noir-head)}
+/* product tabs */
+.woocommerce div.product .woocommerce-tabs ul.tabs li a,.woocommerce-tabs ul.tabs li a{font-family:var(--noir-head)!important;font-size:14px!important;font-weight:700!important;font-stretch:112%;letter-spacing:.14em!important;text-transform:uppercase!important}
+.woocommerce table.shop_attributes th,.woocommerce table.variations th.label,.woocommerce table.variations th.label label{font-family:var(--noir-head)!important;font-stretch:112%;letter-spacing:.08em!important}
+/* header login link */
+.xoo-el-action-sc,.xoo-el-action-sc.xoo-el-login-tgr,a.xoo-el-login-tgr,.xoo-el-action-sc.xoo-el-logout-tgr{font-family:var(--noir-head)!important;font-size:13px!important;font-weight:600!important;font-stretch:112%;letter-spacing:.16em!important;text-transform:uppercase!important;color:var(--noir-ink)!important}
+.xoo-el-action-sc:hover{color:var(--noir-gold)!important}
+.sc_layouts_cart_items_short,.breadcrumbs,.breadcrumbs_item,.nav-links,.nav-links .page-numbers,.price_slider_amount .price_label,.woocs_price_code ins{font-family:var(--noir-head)!important}
+/* blog category tags on gold: dark text */
+.post_meta_item.post_categories a,.post_categories a{color:#111!important;font-family:var(--noir-head)!important;font-weight:700!important;font-stretch:112%;letter-spacing:.12em!important}
+.post_meta_item.post_categories a:hover{color:#000!important;background:#fff!important}
+/* footer links on one line */
+footer .sc_layouts_menu_dir_vertical .sc_layouts_menu_nav>li>a,.footer_wrap .sc_layouts_menu_dir_vertical .sc_layouts_menu_nav>li>a,footer .sc_layouts_menu_dir_vertical li,.footer_wrap .sc_layouts_menu_dir_vertical li{white-space:nowrap!important}
+/* header menu on a single line */
+.sc_layouts_menu_default .sc_layouts_menu_nav{white-space:nowrap}
