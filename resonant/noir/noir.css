@@ -339,3 +339,12 @@ body:not(.logged-in) .sc_layouts_menu_nav>li.menu-item-28481{display:none!import
 .woocommerce .woocommerce_status_bar,.woocommerce .woocommerce_status_bar div,.woocommerce .woocommerce_status_bar span{font-family:var(--noir-head)!important}
 dl.variation,dl.variation *{font-family:var(--noir-body)!important}
 dl.variation dt{font-family:var(--noir-head)!important;font-stretch:112%;font-size:12px!important;text-transform:uppercase;letter-spacing:.06em}
+/* WooCommerce notices (added to basket etc.): clean bar, text left, button right */
+.woocommerce-notices-wrapper .woocommerce-message,.woocommerce-message,.woocommerce-info,.woocommerce-error{display:flex!important;align-items:center;flex-wrap:wrap;gap:14px 20px;background:#141414!important;border:1px solid #262626!important;border-left:3px solid var(--noir-gold)!important;border-radius:2px;padding:16px 20px 16px 52px!important;margin:0 0 30px!important;color:var(--noir-ink)!important;font:400 15px/1.5 var(--noir-body)!important;text-align:left!important;position:relative;list-style:none}
+.woocommerce-error{border-left-color:#e5533d!important}
+.woocommerce-message::before,.woocommerce-info::before,.woocommerce-error::before{content:"\2713"!important;font-family:var(--noir-body)!important;position:absolute!important;left:18px!important;top:50%!important;transform:translateY(-50%);width:22px;height:22px;border-radius:50%;background:var(--noir-gold);color:#111!important;font-size:13px!important;font-weight:800;line-height:22px!important;text-align:center;display:block!important}
+.woocommerce-info::before{content:"i"!important}
+.woocommerce-error::before{content:"!"!important;background:#e5533d}
+.woocommerce-message .button,.woocommerce-message a.wc-forward,.woocommerce-info .button{order:2;margin:0 0 0 auto!important;float:none!important;background:var(--noir-gold)!important;color:#111!important;border:0!important;border-radius:2px!important;padding:12px 18px!important;font:800 12px/1 var(--noir-head)!important;font-stretch:112%;letter-spacing:.14em!important;text-transform:uppercase!important;white-space:nowrap;box-shadow:none!important}
+.woocommerce-message .button:hover,.woocommerce-message a.wc-forward:hover,.woocommerce-info .button:hover{background:#fff!important;color:#111!important}
+@media(max-width:600px){.woocommerce-message .button,.woocommerce-message a.wc-forward{margin:4px 0 0!important;width:100%;text-align:center}}
