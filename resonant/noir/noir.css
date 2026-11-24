@@ -318,5 +318,11 @@ body:not(.logged-in) .sc_layouts_menu_nav>li.menu-item-28481{display:none!import
 /* homepage OPUS 1 card */
 .bf-card .elementor-widget-theme-post-featured-image{position:relative}
 .bf-card .elementor-widget-theme-post-featured-image::after{content:"−50%";position:absolute;top:14px;right:14px;z-index:3;background:var(--noir-gold);color:#111;font:800 22px/1 var(--noir-head);font-stretch:112%;width:74px;height:74px;border-radius:50%;display:flex;align-items:center;justify-content:center;transform:rotate(-10deg);box-shadow:0 8px 22px rgba(0,0,0,.4);pointer-events:none}
-.bf-card-cta{display:block;margin-top:12px;background:var(--noir-gold);color:#111!important;text-align:center;font:800 12px/1 var(--noir-head);font-stretch:112%;letter-spacing:.14em;text-transform:uppercase;padding:14px 12px;border-radius:2px;text-decoration:none!important}
+.bf-card-cta{display:block;width:100%;max-width:192px;box-sizing:border-box;margin:12px auto 0;background:var(--noir-gold);color:#111!important;text-align:center;font:800 12px/1 var(--noir-head);font-stretch:112%;letter-spacing:.14em;text-transform:uppercase;padding:14px 12px;border-radius:2px;text-decoration:none!important}
 .bf-card-cta:hover{background:#fff}
+
+/* blog tags: same gold pill everywhere (home blogger cards had no background) */
+.post_meta_item.post_categories a,.post_categories a{display:inline-block;background:var(--noir-gold)!important;color:#111!important;padding:4px 8px!important;line-height:1.2!important;font-size:11px!important;text-transform:uppercase;margin:0 4px 4px 0;text-decoration:none!important}
+.post_meta_item.post_categories a:hover,.post_categories a:hover{background:#fff!important;color:#111!important}
+.post_meta_item_cat_separator{display:none!important}
+.bf-card-ctaw{display:flex;justify-content:center;width:100%}
