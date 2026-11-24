@@ -420,3 +420,6 @@ li.product .bf-card-ctaw--shop .bf-card-cta{margin:0!important;max-width:none!im
 .woocommerce ul.products li.product .post_item{background:var(--noir-bg2)!important;border:1px solid var(--noir-line)!important;height:100%;transition:background .3s,transform .4s,border-color .3s}
 .woocommerce ul.products li.product:hover .post_item{background:var(--noir-bg3)!important;border-color:#3a3a3a!important;transform:translateY(-4px)}
 .woocommerce ul.products li.product .post_featured{margin:0!important}
+.bf-ph{margin:-10px 0 20px;font-size:13px;color:var(--noir-mute)}
+.bf-ph a{color:var(--noir-ink)!important;text-decoration:underline!important;text-underline-offset:3px}
+.bf-ph a:hover{color:var(--noir-gold)!important}
