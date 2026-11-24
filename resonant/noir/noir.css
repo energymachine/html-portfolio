@@ -326,3 +326,4 @@ body:not(.logged-in) .sc_layouts_menu_nav>li.menu-item-28481{display:none!import
 .post_meta_item.post_categories a:hover,.post_categories a:hover{background:#fff!important;color:#111!important}
 .post_meta_item_cat_separator{display:none!important}
 .bf-card-ctaw{display:flex;justify-content:center;width:100%}
+.bf-card-cta{white-space:nowrap;letter-spacing:.06em!important;font-size:11.5px!important;padding:16px 6px!important}
