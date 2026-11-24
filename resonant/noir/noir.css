@@ -411,3 +411,6 @@ dl.variation dt{font-family:var(--noir-head)!important;font-stretch:112%;font-si
 .sc_layouts_cart_widget .widget_shopping_cart_content{justify-content:flex-start!important;height:auto!important}
 .elementor-menu-cart__product-remove a.remove_from_cart_button{cursor:pointer}
 .elementor-menu-cart__product.bf-removing{opacity:.35;pointer-events:none;transition:opacity .15s}
+/* shop archive: Black Friday button under price */
+li.product .bf-card-ctaw--shop{justify-content:flex-start;margin:14px 0 4px}
+li.product .bf-card-ctaw--shop .bf-card-cta{margin:0!important;max-width:none!important;width:auto!important;padding:13px 18px!important;display:inline-block!important}
