@@ -280,3 +280,43 @@ footer .sc_layouts_menu_dir_vertical .sc_layouts_menu_nav>li>a,.footer_wrap .sc_
 /* hide empty account greeting item for visitors (it rendered as a lone arrow) */
 body:not(.logged-in) .sc_layouts_menu_nav>li.menu-item-28481{display:none!important}
 .elementor[data-elementor-type="wp-page"]>.e-con.bw-bar,.bw-bar.e-con{background:var(--noir-gold)!important}
+/* === Black Friday v3 (25 Nov) === */
+.bf-pct{display:inline-block;background:var(--noir-gold);color:#111!important;font-family:var(--noir-head);font-weight:800;line-height:1;padding:.1em .28em;margin-right:.2em;transform:rotate(-3deg);letter-spacing:0;-webkit-text-fill-color:#111}
+.bw-price{display:flex;align-items:center;flex-wrap:wrap;gap:14px}
+.bw-price .bf-pct{font-size:26px;padding:8px 12px;margin:0}
+.bf-galw{position:relative}
+.bf-gal{position:relative}
+.bf-gal .bf-main{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;background:#1a1a1c}
+.bf-badge{position:absolute;top:18px;left:18px;z-index:2;background:var(--noir-gold);color:#111;font:800 32px/1 var(--noir-head);font-stretch:112%;width:104px;height:104px;border-radius:50%;display:flex;align-items:center;justify-content:center;transform:rotate(-10deg);box-shadow:0 10px 30px rgba(0,0,0,.45);letter-spacing:-.01em}
+.bf-th{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.bf-th button{padding:0!important;border:1px solid #2a2a2a!important;background:#1a1a1c!important;cursor:pointer;aspect-ratio:1/1;overflow:hidden;border-radius:0!important;min-height:0!important}
+.bf-th button.on{border-color:var(--noir-gold)!important}
+.bf-th img{width:100%;height:100%;object-fit:cover;display:block}
+.bf-buy .bf-lbl{font:700 12px var(--noir-head);font-stretch:112%;letter-spacing:.16em;text-transform:uppercase;color:var(--noir-ink);margin:6px 0 12px}
+.bf-hs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.bf-hs button{background:#121212!important;border:1px solid #333!important;color:var(--noir-ink)!important;font:500 15px/1 var(--noir-body)!important;padding:14px 22px!important;cursor:pointer;border-radius:3px!important;text-transform:none!important;letter-spacing:0!important;min-height:0!important}
+.bf-hs button:hover{border-color:#777!important}
+.bf-hs button.on{border:2px solid var(--noir-gold)!important;color:var(--noir-gold)!important;font-weight:600!important;padding:13px 21px!important}
+.bf-add{display:block;width:100%;max-width:440px;background:var(--noir-gold)!important;color:#111!important;border:0!important;border-radius:3px!important;font:800 15px/1 var(--noir-head)!important;font-stretch:112%;letter-spacing:.14em!important;text-transform:uppercase!important;padding:20px 28px!important;cursor:pointer}
+.bf-add:hover{background:#fff!important}
+.bf-add[disabled]{opacity:.6;cursor:wait}
+.bf-note{margin-top:14px;font-size:13px;color:var(--noir-mute)}
+.bf-err{margin-top:10px;color:#ff8a7a;font-size:14px}
+.bf-err[hidden]{display:none}
+.bf-usp-wrap{background:#0d0d0d!important;border-top:1px solid #1e1e1e;border-bottom:1px solid #1e1e1e}
+.bf-usp{max-width:1200px;margin:0 auto;padding:90px 24px}
+.bf-eye{font:700 12px var(--noir-head);font-stretch:112%;letter-spacing:.24em;text-transform:uppercase;color:var(--noir-gold);margin-bottom:14px}
+.bf-usp h2{font-family:var(--noir-head)!important;font-weight:800!important;font-size:clamp(32px,4.2vw,58px)!important;line-height:1!important;font-stretch:116%;text-transform:uppercase;color:var(--noir-ink)!important;margin:0 0 20px!important;max-width:900px;letter-spacing:-.01em!important}
+.bf-usp-intro{font-size:18px;line-height:1.6;color:#d6d3cc;max-width:720px;margin:0 0 50px}
+.bf-usp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#262626;border:1px solid #262626}
+.bf-usp-grid>div{background:#0a0a0a;padding:34px 30px}
+.bf-usp-grid span{font:800 14px var(--noir-head);color:var(--noir-gold);letter-spacing:.1em}
+.bf-usp-grid h3{font-family:var(--noir-head)!important;font-weight:800!important;font-size:19px!important;line-height:1.2!important;font-stretch:112%;text-transform:uppercase;color:var(--noir-ink)!important;margin:14px 0 10px!important;letter-spacing:.02em!important}
+.bf-usp-grid p{font-size:15px;color:#b9b6af;margin:0;line-height:1.6}
+@media(max-width:900px){.bf-usp-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.bf-usp-grid{grid-template-columns:1fr}.bf-badge{width:78px;height:78px;font-size:25px;top:12px;left:12px}.bf-usp{padding:60px 18px}.bw-price .bf-pct{font-size:20px}}
+/* homepage OPUS 1 card */
+.bf-card .elementor-widget-theme-post-featured-image{position:relative}
+.bf-card .elementor-widget-theme-post-featured-image::after{content:"−50%";position:absolute;top:14px;right:14px;z-index:3;background:var(--noir-gold);color:#111;font:800 22px/1 var(--noir-head);font-stretch:112%;width:74px;height:74px;border-radius:50%;display:flex;align-items:center;justify-content:center;transform:rotate(-10deg);box-shadow:0 8px 22px rgba(0,0,0,.4);pointer-events:none}
+.bf-card-cta{display:block;margin-top:12px;background:var(--noir-gold);color:#111!important;text-align:center;font:800 12px/1 var(--noir-head);font-stretch:112%;letter-spacing:.14em;text-transform:uppercase;padding:14px 12px;border-radius:2px;text-decoration:none!important}
+.bf-card-cta:hover{background:#fff}
