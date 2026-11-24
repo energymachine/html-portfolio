@@ -275,3 +275,5 @@ body:has(.bf-hero){overflow-x:hidden}
 footer .sc_layouts_menu_dir_vertical .sc_layouts_menu_nav>li>a,.footer_wrap .sc_layouts_menu_dir_vertical .sc_layouts_menu_nav>li>a,footer .sc_layouts_menu_dir_vertical li,.footer_wrap .sc_layouts_menu_dir_vertical li{white-space:nowrap!important}
 /* header menu on a single line */
 .sc_layouts_menu_default .sc_layouts_menu_nav{white-space:nowrap}
+/* hide empty account greeting item for visitors (it rendered as a lone arrow) */
+body:not(.logged-in) .sc_layouts_menu_nav>li.menu-item-28481{display:none!important}
