@@ -327,3 +327,12 @@ body:not(.logged-in) .sc_layouts_menu_nav>li.menu-item-28481{display:none!import
 .post_meta_item_cat_separator{display:none!important}
 .bf-card-ctaw{display:flex;justify-content:center;width:100%}
 .bf-card-cta{white-space:nowrap;letter-spacing:.06em!important;font-size:11.5px!important;padding:16px 6px!important}
+/* WooCommerce pages: replace remaining theme condensed font */
+.woocommerce :is(p,label,th,td,tr,table,tbody,thead,tfoot,abbr,option,select,li,strong,dt,dd,small,bdi,ul,ol,mark,address,em),.woocommerce :is(span,div,a):not(.button):not([class*=icon]):not(.elementor-button),.sc_layouts_cart :is(span,div,a):not([class*=icon]){font-family:var(--noir-body)!important}
+.woocommerce_status_bar,.woocommerce_status_bar *{font-family:var(--noir-head)!important;font-stretch:112%;font-weight:700!important;letter-spacing:.1em!important;text-transform:uppercase}
+.woocommerce_status_bar>div{font-size:13px!important}
+.woocommerce_status_bar .num{font-size:12px!important;letter-spacing:0!important}
+.woocommerce table.shop_table th,.woocommerce-order-overview li,.woocommerce-order-overview li strong,.wc-item-meta-label,.woocommerce .wc-item-meta strong{font-family:var(--noir-head)!important;font-stretch:112%;letter-spacing:.06em!important}
+.woocommerce-order-overview li{font-size:11px!important;text-transform:uppercase}
+.woocommerce-order-overview li strong{font-size:15px!important;text-transform:none;letter-spacing:0!important;margin-top:4px;display:block}
+.wc-item-meta-label{font-size:12px!important;text-transform:uppercase}
