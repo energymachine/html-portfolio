@@ -354,3 +354,13 @@ dl.variation dt{font-family:var(--noir-head)!important;font-stretch:112%;font-si
 @media(min-width:601px){.woocommerce-message::before,.woocommerce-info::before,.woocommerce-error::before{top:50%!important;transform:translateY(-50%)!important}}
 .woocommerce .woocommerce-message a.button.wc-forward:not(.checkout),.woocommerce-page .woocommerce-message a.button.wc-forward:not(.checkout){background:var(--noir-gold)!important;color:#111!important;border:0!important}
 .woocommerce .woocommerce-message a.button.wc-forward:not(.checkout):hover{background:#fff!important;color:#111!important}
+/* WooCommerce notices (added to basket, info, errors) */
+.woocommerce-message,.woocommerce-info,.woocommerce-error,.woocommerce-notices-wrapper .woocommerce-message{display:flex!important;align-items:center;flex-wrap:wrap;gap:12px 20px;background:#141414!important;border:1px solid #262626!important;border-left:3px solid var(--noir-gold)!important;color:var(--noir-ink)!important;font:400 15px/1.5 var(--noir-body)!important;text-align:left!important;padding:16px 20px 16px 56px!important;margin:0 0 30px!important;position:relative;border-radius:2px;list-style:none!important}
+.woocommerce-error{border-left-color:#ff6b5b!important}
+.woocommerce-message::before,.woocommerce-info::before,.woocommerce-error::before{content:"✓"!important;position:absolute!important;left:18px!important;top:50%!important;transform:translateY(-50%);width:24px;height:24px;border-radius:50%;background:var(--noir-gold);color:#111!important;font:700 13px/24px var(--noir-body)!important;text-align:center;margin:0!important}
+.woocommerce-info::before{content:"i"!important;font-family:Georgia,serif!important;font-style:italic}
+.woocommerce-error::before{content:"!"!important;background:#ff6b5b}
+.woocommerce-error li{list-style:none!important;margin:0!important}
+.woocommerce-message .button,.woocommerce-message a.wc-forward,.woocommerce-info .button{order:2;margin:0 0 0 auto!important;float:none!important;background:var(--noir-gold)!important;color:#111!important;border:0!important;border-radius:2px!important;font:800 12px/1 var(--noir-head)!important;font-stretch:112%;letter-spacing:.14em!important;text-transform:uppercase!important;padding:13px 20px!important;box-shadow:none!important;white-space:nowrap}
+.woocommerce-message .button:hover,.woocommerce-message a.wc-forward:hover,.woocommerce-info .button:hover{background:#fff!important;color:#111!important}
+@media(max-width:600px){.woocommerce-message .button,.woocommerce-message a.wc-forward{margin:4px 0 0!important;width:100%;text-align:center}}
