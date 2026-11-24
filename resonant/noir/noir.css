@@ -336,3 +336,6 @@ body:not(.logged-in) .sc_layouts_menu_nav>li.menu-item-28481{display:none!import
 .woocommerce-order-overview li{font-size:11px!important;text-transform:uppercase}
 .woocommerce-order-overview li strong{font-size:15px!important;text-transform:none;letter-spacing:0!important;margin-top:4px;display:block}
 .wc-item-meta-label{font-size:12px!important;text-transform:uppercase}
+.woocommerce .woocommerce_status_bar,.woocommerce .woocommerce_status_bar div,.woocommerce .woocommerce_status_bar span{font-family:var(--noir-head)!important}
+dl.variation,dl.variation *{font-family:var(--noir-body)!important}
+dl.variation dt{font-family:var(--noir-head)!important;font-stretch:112%;font-size:12px!important;text-transform:uppercase;letter-spacing:.06em}
