@@ -371,3 +371,34 @@ dl.variation dt{font-family:var(--noir-head)!important;font-stretch:112%;font-si
 .woocommerce a.remove:hover,.woocommerce a.remove:focus-visible{background:#ff6b5b!important;border-color:#ff6b5b!important}
 .woocommerce a.remove:hover::after,.woocommerce a.remove:focus-visible::after{background:#111!important}
 .woocommerce table.cart td.product-remove{text-align:center!important;vertical-align:middle!important}
+/* === side cart panel (Elementor menu cart inside ThemeREX cart widget) === */
+.sc_layouts_cart_widget .widget_shopping_cart{position:relative!important;top:auto!important;left:auto!important;transform:none!important;width:100%!important;max-height:none!important;padding:0!important;margin:18px 0 0!important;background:transparent!important}
+.sc_layouts_cart_widget .widget_shopping_cart_content{display:flex!important;flex-direction:column}
+.sc_layouts_cart_widget .elementor-menu-cart__products{display:block!important;max-height:none;overflow:visible}
+.elementor-menu-cart__product{display:grid!important;grid-template-columns:76px 1fr 40px;grid-template-rows:auto auto;column-gap:14px;row-gap:4px;align-items:center;padding:16px 0!important;margin:0!important;border-bottom:1px solid #262626!important;position:relative;width:auto!important}
+.elementor-menu-cart__product-image{grid-column:1;grid-row:1/span 2;width:76px!important;margin:0!important}
+.elementor-menu-cart__product-image a,.elementor-menu-cart__product-image img{display:block;width:76px!important;height:76px!important;max-width:none!important;object-fit:cover;background:#f9faf5;border-radius:2px}
+.elementor-menu-cart__product-name{grid-column:2;grid-row:1;align-self:end;margin:0!important;padding:0!important;font:600 14px/1.35 var(--noir-body)!important;text-align:left!important}
+.elementor-menu-cart__product-name a{color:var(--noir-ink)!important;font:inherit!important;text-transform:none!important;letter-spacing:0!important}
+.elementor-menu-cart__product-name a:hover{color:var(--noir-gold)!important}
+.elementor-menu-cart__product-price{grid-column:2;grid-row:2;align-self:start;margin:0!important;padding:0!important;font:400 14px/1.4 var(--noir-body)!important;color:var(--noir-mute)!important;text-align:left!important}
+.elementor-menu-cart__product-price .amount,.elementor-menu-cart__product-price bdi{color:var(--noir-gold)!important;font-weight:600}
+.elementor-menu-cart__product-remove{grid-column:3;grid-row:1/span 2;position:relative!important;width:40px!important;height:40px!important;margin:0!important;padding:0!important;border:0!important;display:block!important;top:auto!important;right:auto!important}
+.elementor-menu-cart__product-remove::before,.elementor-menu-cart__product-remove::after{content:none!important;display:none!important}
+.elementor-menu-cart__product-remove a:not(.elementor_remove_from_cart_button){display:none!important}
+.elementor-menu-cart__product-remove a.elementor_remove_from_cart_button{position:absolute!important;inset:0!important;display:flex!important;align-items:center;justify-content:center;width:40px!important;height:40px!important;border:1px solid #3a3a3a!important;border-radius:3px!important;background:#161616!important;opacity:1!important;transition:background .2s,border-color .2s}
+.elementor-menu-cart__product-remove a.elementor_remove_from_cart_button::before{content:none!important}
+.elementor-menu-cart__product-remove a.elementor_remove_from_cart_button::after{content:""!important;display:block!important;width:17px;height:17px;position:static!important;transform:none!important;background:#e8e6e1!important;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6'/%3E%3C/svg%3E") center/contain no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6M10 11v6M14 11v6'/%3E%3C/svg%3E") center/contain no-repeat}
+.elementor-menu-cart__product-remove a.elementor_remove_from_cart_button:hover{background:#ff6b5b!important;border-color:#ff6b5b!important}
+.elementor-menu-cart__product-remove a.elementor_remove_from_cart_button:hover::after{background:#111!important}
+.elementor-menu-cart__subtotal{display:flex!important;justify-content:space-between;align-items:baseline;padding:18px 0!important;margin:0!important;border:0!important;font:400 15px var(--noir-body)!important;color:var(--noir-ink)!important;text-align:left!important}
+.elementor-menu-cart__subtotal strong{font-family:var(--noir-head)!important;font-weight:700;font-stretch:112%;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.elementor-menu-cart__subtotal .amount,.elementor-menu-cart__subtotal bdi{color:var(--noir-gold)!important;font-weight:700;font-size:17px}
+.elementor-menu-cart__footer-buttons{display:grid!important;grid-template-columns:1fr 1fr;gap:10px;margin:0!important;padding:0!important}
+.elementor-menu-cart__footer-buttons .elementor-button{display:flex!important;align-items:center;justify-content:center;width:100%!important;margin:0!important;padding:15px 10px!important;border-radius:2px!important;font:800 12px/1 var(--noir-head)!important;font-stretch:112%;letter-spacing:.14em!important;text-transform:uppercase!important;text-align:center}
+.elementor-menu-cart__footer-buttons .elementor-button--view-cart{background:transparent!important;color:var(--noir-ink)!important;border:1px solid #444!important}
+.elementor-menu-cart__footer-buttons .elementor-button--view-cart:hover{border-color:var(--noir-ink)!important}
+.elementor-menu-cart__footer-buttons .elementor-button--checkout{background:var(--noir-gold)!important;color:#111!important;border:1px solid var(--noir-gold)!important}
+.elementor-menu-cart__footer-buttons .elementor-button--checkout:hover{background:#fff!important;border-color:#fff!important}
+.elementor-menu-cart__footer-buttons .elementor-button-text{color:inherit!important}
+.sc_layouts_cart_widget .woocommerce-mini-cart__empty-message{color:var(--noir-mute);padding:20px 0}
