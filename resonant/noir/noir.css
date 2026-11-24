@@ -402,3 +402,8 @@ dl.variation dt{font-family:var(--noir-head)!important;font-stretch:112%;font-si
 .elementor-menu-cart__footer-buttons .elementor-button--checkout:hover{background:#fff!important;border-color:#fff!important}
 .elementor-menu-cart__footer-buttons .elementor-button-text{color:inherit!important}
 .sc_layouts_cart_widget .woocommerce-mini-cart__empty-message{color:var(--noir-mute);padding:20px 0}
+.widget_shopping_cart .elementor-menu-cart__footer-buttons a.elementor-button.elementor-button--checkout,.widget_shopping_cart .elementor-menu-cart__footer-buttons a.elementor-button--checkout[href]{background:var(--noir-gold)!important;color:#111!important;border-color:var(--noir-gold)!important}
+.widget_shopping_cart .elementor-menu-cart__footer-buttons a.elementor-button.elementor-button--checkout:hover{background:#fff!important;border-color:#fff!important}
+.widget_shopping_cart .elementor-menu-cart__footer-buttons a.elementor-button.elementor-button--view-cart,.widget_shopping_cart .elementor-menu-cart__footer-buttons a.elementor-button--view-cart[href]{background:transparent!important;color:var(--noir-ink)!important;border:1px solid #444!important}
+.widget_shopping_cart .elementor-menu-cart__footer-buttons a.elementor-button.elementor-button--view-cart:hover{border-color:var(--noir-ink)!important}
+.elementor-menu-cart__product-price .product-quantity{color:var(--noir-mute)}
