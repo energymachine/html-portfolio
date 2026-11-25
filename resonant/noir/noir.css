@@ -423,3 +423,7 @@ li.product .bf-card-ctaw--shop .bf-card-cta{margin:0!important;max-width:none!im
 .bf-ph{margin:-10px 0 20px;font-size:13px;color:var(--noir-mute)}
 .bf-ph a{color:var(--noir-ink)!important;text-decoration:underline!important;text-underline-offset:3px}
 .bf-ph a:hover{color:var(--noir-gold)!important}
+/* Black Friday band: restore gold (was overridden by the wp-page container reset) */
+.elementor[data-elementor-type="wp-page"]>.e-con.bf-band,.bf-band.e-con{background:var(--noir-gold)!important}
+/* regular OPUS 1 card is no longer discounted: no -50% circle on its photo */
+.bf-card .elementor-widget-theme-post-featured-image::after{content:none!important;display:none!important}
